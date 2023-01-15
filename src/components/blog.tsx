@@ -2,15 +2,12 @@ const Blog = () => {
     return (
 
         <div className="bg-[#efefef]">
-            <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pt-32 pb-24 font-['Poppins']">
+            <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-14 md:py-32 font-['Poppins']">
                 <div className="mb-12 space-y-2 text-center">
-                    <h2 className="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">
+                    <h2 className="text-2xl md:text-4xl font-bold text-center">
                         Blog & Care
                     </h2>
-                    <p className="lg:mx-auto lg:w-6/12 text-gray-600 dark:text-gray-300">
-                        Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt,
-                        debitis dolorum officia aliquid explicabo? Excepturi, voluptate?
-                    </p>
+
                 </div>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                     <div className="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
@@ -21,17 +18,14 @@ const Blog = () => {
                                 loading="lazy"
                                 width={1000}
                                 height={667}
-                                className="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                className="h-40 w-full object-cover object-top transition duration-500 group-hover:scale-105"
                             />
                         </div>
                         <div className="mt-6 relative">
                             <h3 className="text-1xl font-semibold text-gray-900 dark:text-white">
                                 De fuga fugiat lorem ispum laboriosam expedita.
                             </h3>
-                            <p className="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-                                Voluptates harum aliquam totam, doloribus eum impedit atque!
-                                Temporibus...
-                            </p>
+
 
                         </div>
                     </div>
@@ -43,17 +37,14 @@ const Blog = () => {
                                 loading="lazy"
                                 width={1000}
                                 height={667}
-                                className="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                className="h-40 w-full object-cover object-top transition duration-500 group-hover:scale-105"
                             />
                         </div>
                         <div className="mt-6 relative">
                             <h3 className="text-1xl font-semibold text-gray-900 dark:text-white">
                                 De fuga fugiat lorem ispum laboriosam expedita.
                             </h3>
-                            <p className="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-                                Voluptates harum aliquam totam, doloribus eum impedit atque!
-                                Temporibus...
-                            </p>
+
 
                         </div>
                     </div>
@@ -65,17 +56,14 @@ const Blog = () => {
                                 loading="lazy"
                                 width={1000}
                                 height={667}
-                                className="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                className="h-40 w-full object-cover object-top transition duration-500 group-hover:scale-105"
                             />
                         </div>
                         <div className="mt-6 relative">
                             <h3 className="text-1xl font-semibold text-gray-900 dark:text-white">
                                 De fuga fugiat lorem ispum laboriosam expedita.
                             </h3>
-                            <p className="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-                                Voluptates harum aliquam totam, doloribus eum impedit atque!
-                                Temporibus...
-                            </p>
+
 
                         </div>
                     </div>
@@ -90,9 +78,9 @@ const Blog = () => {
 
                         </h2>
                     </div>
-                    <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="mt-16 px-2 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         <div className="p-8 py-12 px-12 md:px-12 rounded-3xl bg-[#F52E39] border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 shadow-2xl shadow-gray-600/10">
-                            <div className="space-y-16">
+                            <div className="space-y-8">
                                 <div
                                     aria-hidden="true"
                                     className="flex h-10 w-10 items-center justify-center rounded-full bg-pink-50 dark:bg-gray-700"
@@ -101,17 +89,14 @@ const Blog = () => {
                                         1
                                     </span>
                                 </div>
-                                <div className="space-y-2">
-
-                                    <p className="text-white dark:text-gray-300">
-                                        Register Your Service Request Website/App
-                                    </p>
-                                </div>
+                                <p className="text-white dark:text-gray-300">
+                                    Register Your Service Request Website/App
+                                </p>
 
                             </div>
                         </div>
                         <div className="p-8 py-12 sm:p-12 rounded-3xl bg-[#F52E39] border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 shadow-2xl shadow-gray-600/10">
-                            <div className="space-y-16">
+                            <div className="space-y-8">
                                 <div
                                     aria-hidden="true"
                                     className="flex h-10 w-10 items-center justify-center rounded-full bg-pink-50 dark:bg-gray-700"
@@ -120,17 +105,14 @@ const Blog = () => {
                                         2
                                     </span>
                                 </div>
-                                <div className="space-y-2">
-
-                                    <p className="text-white dark:text-gray-300">
-                                        Get A Confirmation Call From SmartCare
-                                    </p>
-                                </div>
+                                <p className="text-white dark:text-gray-300">
+                                    Get A Confirmation Call From SmartCare
+                                </p>
 
                             </div>
                         </div>
                         <div className="p-8 py-12 sm:p-12 rounded-3xl bg-[#F52E39] border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 shadow-2xl shadow-gray-600/10">
-                            <div className="space-y-16">
+                            <div className="space-y-8">
                                 <div
                                     aria-hidden="true"
                                     className="flex h-10 w-10 items-center justify-center rounded-full bg-purple-50 dark:bg-gray-700"
@@ -139,12 +121,9 @@ const Blog = () => {
                                         3
                                     </span>
                                 </div>
-                                <div className="space-y-2">
-
-                                    <p className="text-white dark:text-gray-300">
-                                        Our Excutive Go To Your Door & Resolve Problem
-                                    </p>
-                                </div>
+                                <p className="text-white dark:text-gray-300">
+                                    Our Excutive Go To Your Door & Resolve Problem
+                                </p>
 
                             </div>
                         </div>
@@ -168,13 +147,12 @@ const Blog = () => {
                             />
                         </div>
                         <div className="md:7/12 lg:w-1/2">
-                            <h2 className="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
-                                Nuxt development is carried out by passionate developers
+                            <h2 className="text-3xl font-bold text-gray-900 md:text-3xl dark:text-white">
+                                Revolutionize Your Home Repair Experience with Smart Care Home Appliance Repair App
                             </h2>
                             <p className="my-8 text-gray-600 dark:text-gray-300">
-                                Nobis minus voluptatibus pariatur dignissimos libero quaerat iure
-                                expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur
-                                quam mollitia.
+                                The Smart Care Home Appliance Repair App is your one-stop solution for all your home appliance repair needs. Whether you need a refrigerator repair, efficient, and affordable.
+                                Download the Smart Care Home Appliance Repair App today and experience the convenience of smart home repair service.
                             </p>
                             <div className="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
                                 <div className="mt-8 flex gap-4 md:items-center">
@@ -194,10 +172,10 @@ const Blog = () => {
                                     </div>
                                     <div className="w-5/6">
                                         <h4 className="font-semibold text-lg text-gray-700 dark:text-indigo-300">
-                                            Chat Anytime
+                                            Customer Support
                                         </h4>
                                         <p className="text-gray-500 dark:text-gray-400">
-                                            Asperiores nemo possimus nesciunt quam mollitia.
+                                            We are providing free consulting for your devices
                                         </p>
                                     </div>
                                 </div>
@@ -218,10 +196,10 @@ const Blog = () => {
                                     </div>
                                     <div className="w-5/6">
                                         <h4 className="font-semibold text-lg text-gray-700 dark:text-teal-300">
-                                            Real Time Location
+                                            Anywhere in Supaul
                                         </h4>
                                         <p className="text-gray-500 dark:text-gray-400">
-                                            Asperiores nemo possimus nesciunt quam mollitia.
+                                            Book our service in all over supaul
                                         </p>
                                     </div>
                                 </div>

@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Hero from "@/components/hero";
 import Blog from "@/components/blog";
 import Brands from "@/components/brands";
+import Head from "next/head";
 
 const Home = () => {
   // const router = useRouter();
@@ -26,6 +27,11 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        <title></title>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+
+      </Head>
       <Hero />
       <Blog />
       <Brands />

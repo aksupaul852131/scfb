@@ -35,13 +35,13 @@ export default function Nav() {
                                 <div className="flex flex-shrink-0 items-center">
                                     <img
                                         className="block h-8 w-auto lg:hidden"
-                                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                                        alt="Your Company"
+                                        src="/logo1.png"
+                                        alt="Smart Care"
                                     />
                                     <img
                                         className="hidden h-8 w-auto lg:block"
-                                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                                        alt="Your Company"
+                                        src="/logo1.png"
+                                        alt="Smart Care"
                                     />
                                 </div>
                                 <div className="hidden sm:ml-6 sm:block">
