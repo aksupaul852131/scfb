@@ -134,7 +134,7 @@ const Blog = () => {
             {/* /app */}
 
             <div className="bg-[#efefef]">
-                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pt-16 pb-24 font-['Poppins']
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 pb-24 font-['Poppins']
                 ">
                     <div className="lg:bg-gray-50 dark:lg:bg-darker lg:p-16 rounded-[4rem] space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center">
                         <div className="md:5/12 lg:w-1/2">
@@ -147,7 +147,7 @@ const Blog = () => {
                             />
                         </div>
                         <div className="md:7/12 lg:w-1/2">
-                            <h2 className="text-3xl font-bold text-gray-900 md:text-3xl dark:text-white">
+                            <h2 className="text-2xl font-bold text-gray-900 md:text-3xl dark:text-white">
                                 Revolutionize Your Home Repair Experience with Smart Care Home Appliance Repair App
                             </h2>
                             <p className="my-8 text-gray-600 dark:text-gray-300">
