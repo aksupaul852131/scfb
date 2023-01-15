@@ -2,12 +2,12 @@ import React from "react";
 
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useRouter } from "next/router";
-import { FirebaseApp } from "firebase-config";
+import { firebaseApp } from "firebase-config";
 
 const login = () => {
-    const firebaseAuth = getAuth(FirebaseApp);
+    const firebaseAuth = getAuth(firebaseApp);
     const provider = new GoogleAuthProvider();
-    const router = useRouter();
+    const Router = useRouter();
 
     const signIn = async () => {
         const { user } = await signInWithPopup(firebaseAuth, provider);
@@ -15,7 +15,7 @@ const login = () => {
         console.log(refreshToken, providerData);
         localStorage.setItem("user", JSON.stringify(providerData));
         localStorage.setItem("accessToken", JSON.stringify(refreshToken));
-        router.push("/");
+        Router.push("/");
     };
 
     return (
