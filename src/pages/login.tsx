@@ -4,7 +4,7 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useRouter } from "next/router";
 import { firebaseApp } from "firebase-config";
 
-const login = () => {
+const Login = () => {
     const firebaseAuth = getAuth(firebaseApp);
     const provider = new GoogleAuthProvider();
     const Router = useRouter();
@@ -31,11 +31,11 @@ const login = () => {
                     rounded-full cursor-pointer hover:shadow-md hover:bg-opacity-100 duration-150 ease-in-out z-10"
                 onClick={signIn}
             >
-
+                963.*
                 <p className="text-lg font-semibold ml-4">Sign in with Google</p>
             </div>
         </div>
     );
 };
 
-export default login;
+export default Login;
