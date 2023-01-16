@@ -23,8 +23,9 @@ export default function Home({ blogs }) {
         <title></title>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
       </Head>
-
+      <Hero />
       <Blog blogs={blogs} />
+      <Brands />
     </div>
 
 
