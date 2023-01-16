@@ -129,28 +129,28 @@ const Slug = ({ post, relatedPosts }) => {
                                                 aria-labelledby="dropdownMenuIconHorizontalButton"
                                             >
                                                 <li>
-                                                    <a
+                                                    <Link
                                                         href="#"
                                                         className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                                                     >
                                                         Edit
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
+                                                    <Link
                                                         href="#"
                                                         className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                                                     >
                                                         Remove
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
+                                                    <Link
                                                         href="#"
                                                         className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                                                     >
                                                         Report
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -279,12 +279,12 @@ const Slug = ({ post, relatedPosts }) => {
                                 </div>
                                 <div className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">
                                     We care about the protection of your data.{" "}
-                                    <a
+                                    <Link
                                         href="#"
                                         className="font-medium text-primary-600 dark:text-primary-500 hover:underline"
                                     >
                                         Read our Privacy Policy
-                                    </a>
+                                    </Link>
                                     .
                                 </div>
                             </form>
