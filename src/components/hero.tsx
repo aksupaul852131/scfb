@@ -34,29 +34,93 @@ const Hero = () => {
                 <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-14 md:py-32 font-['Poppins']">
                     <h2 className="text-2xl md:text-4xl font-semibold text-center">Select Your Service</h2>
                     <div className="mt-16 grid gap-4 md:gap-8 grid-cols-2 lg:grid-cols-3">
-                        <img
-                            src="/ac-repair.png"
-                        />
-                        <img
-                            src="/washing-machine1.png"
-                        />
-                        <img
-                            src="/geyser-repair.png"
-                        />
-                        <img
-                            src="/tv-repair.png"
-                        />
-                        <img
-                            src="/ro-repair.png"
-                        />
-                        <Image
-                            src="/air-purifier.png"
-                            alt={""} width='10000' height={'100'}
-                            className='w-full'
-                        />
+
+
+                        <div className="group">
+                            <div className="relative overflow-hidden">
+                                <img
+                                    src="/ac-repair.png"
+                                    alt="art cover"
+                                    loading="lazy"
+                                    width={1000}
+                                    height={667}
+                                    className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                />
+                            </div>
+                        </div>
+
+                        <div className="group">
+                            <div className="relative overflow-hidden">
+                                <img
+                                    src="/air-purifier.png"
+                                    alt="art cover"
+                                    loading="lazy"
+                                    width={1000}
+                                    height={667}
+                                    className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                />
+                            </div>
+                        </div>
+
+                        <div className="group">
+                            <div className="relative overflow-hidden">
+                                <img
+                                    src="/tv-repair.png"
+                                    alt="art cover"
+                                    loading="lazy"
+                                    width={1000}
+                                    height={667}
+                                    className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                />
+                            </div>
+                        </div>
+
+                        <div className="group">
+                            <div className="relative overflow-hidden">
+                                <img
+                                    src="/ro-repair.png"
+                                    alt="art cover"
+                                    loading="lazy"
+                                    width={1000}
+                                    height={667}
+                                    className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                />
+                            </div>
+                        </div>
+                        <div className="group">
+                            <div className="relative overflow-hidden">
+                                <img
+                                    src="/geyser-repair.png"
+                                    alt="art cover"
+                                    loading="lazy"
+                                    width={1000}
+                                    height={667}
+                                    className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                />
+                            </div>
+                        </div>
+
+                        <div className="group">
+                            <div className="relative overflow-hidden">
+                                <img
+                                    src="/washing-machine1.png"
+                                    alt="art cover"
+                                    loading="lazy"
+                                    width={1000}
+                                    height={667}
+                                    className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                />
+                            </div>
+                        </div>
+
+
+
+
+
+
                     </div>
-                    <Image className='mt-8 w-full' src={"/aprepair.png"} alt={""} width='2000' height={'100'}
-                    />
+                    {/* <Image className='mt-8 w-full' src={"/aprepair.png"} alt={""} width='2000' height={'100'}
+                    /> */}
                 </div>
             </div>
 

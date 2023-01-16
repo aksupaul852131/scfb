@@ -1,7 +1,20 @@
-const Blog = () => {
+import Link from "next/link";
+import imageUrlBuilder from '@sanity/image-url'
+import client from '../../client'
+
+function Blog({ blogs }) {
+
+    const builder = imageUrlBuilder(client);
+
+    function urlFor(source) {
+        return builder.image(source)
+    }
     return (
 
         <div className="bg-[#efefef]">
+
+
+
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-14 md:py-32 font-['Poppins']">
                 <div className="mb-12 space-y-2 text-center">
                     <h2 className="text-2xl md:text-4xl font-bold text-center">
@@ -10,63 +23,38 @@ const Blog = () => {
 
                 </div>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                    <div className="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
-                        <div className="relative overflow-hidden rounded-xl">
-                            <img
-                                src="https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/region/in/blog/pc/detail/Blog-11.jpg"
-                                alt="art cover"
-                                loading="lazy"
-                                width={1000}
-                                height={667}
-                                className="h-40 w-full object-cover object-top transition duration-500 group-hover:scale-105"
-                            />
-                        </div>
-                        <div className="mt-6 relative">
-                            <h3 className="text-1xl font-semibold text-gray-900 dark:text-white">
-                                De fuga fugiat lorem ispum laboriosam expedita.
-                            </h3>
 
 
-                        </div>
-                    </div>
-                    <div className="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
-                        <div className="relative overflow-hidden rounded-xl">
-                            <img
-                                src="https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
-                                alt="art cover"
-                                loading="lazy"
-                                width={1000}
-                                height={667}
-                                className="h-40 w-full object-cover object-top transition duration-500 group-hover:scale-105"
-                            />
-                        </div>
-                        <div className="mt-6 relative">
-                            <h3 className="text-1xl font-semibold text-gray-900 dark:text-white">
-                                De fuga fugiat lorem ispum laboriosam expedita.
-                            </h3>
+                    {!blogs.length > 0 && <p>No pets to show</p>}
+                    {blogs.length > 0 && (
+
+                        blogs.map((b) => (
+
+                            <div key={b._id} className="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+                                <div className="relative overflow-hidden rounded-xl">
+                                    <img
+                                        src={urlFor(b.mainImage).width(600).url()}
+                                        alt="art cover"
+                                        loading="lazy"
+                                        width={1000}
+                                        height={667}
+                                        className="h-40 w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                    />
+                                </div>
+                                <div className="mt-6 relative">
+                                    <h3 className="text-1xl font-semibold text-gray-900 dark:text-white">
+                                        <Link href={`/blog/${b.slug.current}`}>{b.Slug}</Link>
+                                    </h3>
 
 
-                        </div>
-                    </div>
-                    <div className="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
-                        <div className="relative overflow-hidden rounded-xl">
-                            <img
-                                src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
-                                alt="art cover"
-                                loading="lazy"
-                                width={1000}
-                                height={667}
-                                className="h-40 w-full object-cover object-top transition duration-500 group-hover:scale-105"
-                            />
-                        </div>
-                        <div className="mt-6 relative">
-                            <h3 className="text-1xl font-semibold text-gray-900 dark:text-white">
-                                De fuga fugiat lorem ispum laboriosam expedita.
-                            </h3>
+                                </div>
+                            </div>
+                        ))
+
+                    )}
 
 
-                        </div>
-                    </div>
+
                 </div>
             </div>
 

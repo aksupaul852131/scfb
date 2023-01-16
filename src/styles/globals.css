@@ -3,3 +3,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .disabled {
+        @apply opacity-50 cursor-not-allowed
+    }
+
+    .single-article h1 {
+        @apply text-3xl font-bold py-2 font-['Poppins'];
+    }
+
+    .single-article h2 {
+        @apply text-xl font-bold py-2 font-['Poppins'];
+    }
+
+    .single-article h3 {
+        @apply text-2xl text-black font-bold py-2 font-['Poppins'] mt-8;
+    }
+
+    .single-article pre {
+        @apply text-green-500 bg-gray-100 my-6 p-2 font-['Poppins'];
+    }
+
+    .single-article p {
+        @apply font-['Poppins'] text-black leading-loose tracking-wide mt-4;
+    }
+
+    .single-article blockquote {
+        @apply my-4 p-4 border-l-4 bg-gray-100 text-gray-500 border-dashed;
+    }
+
+    .single-article ul {
+        @apply list-decimal mx-8;
+    }
+
+    .single-article ul li {
+        @apply mt-2;
+    }
+
+    .single-article img {
+        @apply mt-6 w-full;
+    }
+}

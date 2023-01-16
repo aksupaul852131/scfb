@@ -20,24 +20,14 @@ export default function Nav() {
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                         <div className="relative flex h-16 items-center justify-between">
-                            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                                {/* Mobile menu button*/}
-                                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                                    <span className="sr-only">Open main menu</span>
-                                    {open ? (
-                                        <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                                    ) : (
-                                        <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                                    )}
-                                </Disclosure.Button>
-                            </div>
+                            <img
+                                className="block h-8 w-auto lg:hidden"
+                                src="/logo1.png"
+                                alt="Smart Care"
+                            />
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                                 <div className="flex flex-shrink-0 items-center">
-                                    <img
-                                        className="block h-8 w-auto lg:hidden"
-                                        src="/logo1.png"
-                                        alt="Smart Care"
-                                    />
+
                                     <img
                                         className="hidden h-8 w-auto lg:block"
                                         src="/logo1.png"
@@ -65,25 +55,42 @@ export default function Nav() {
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <button
                                     type="button"
-                                    className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                    className="flex rounded-full border border-green-400 px-4 py-1 text-green-500
+                                     hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 font-medium"
                                 >
                                     <span className="sr-only">View notifications</span>
-                                    <BellIcon className="h-6 w-6" aria-hidden="true" />
+                                    <h3 className='flex'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5 mr-2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                        </svg>
+                                        08825105519</h3>
                                 </button>
+                                <div >
+                                    {/* Mobile menu button*/}
 
+                                </div>
                                 {/* Profile dropdown */}
                                 <Menu as="div" className="relative ml-3">
-                                    <div>
-                                        <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                    <div className=" flex items-center sm:hidden">
+                                        {/* <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                                             <span className="sr-only">Open user menu</span>
                                             <img
                                                 className="h-8 w-8 rounded-full"
                                                 src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                                                 alt=""
                                             />
-                                        </Menu.Button>
+                                        </Menu.Button> */}
+                                        <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                                            <span className="sr-only">Open main menu</span>
+                                            {open ? (
+                                                <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                                            ) : (
+                                                <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                                            )}
+                                        </Disclosure.Button>
+
                                     </div>
-                                    <Transition
+                                    {/* <Transition
                                         as={Fragment}
                                         enter="transition ease-out duration-100"
                                         enterFrom="transform opacity-0 scale-95"
@@ -124,7 +131,7 @@ export default function Nav() {
                                                 )}
                                             </Menu.Item>
                                         </Menu.Items>
-                                    </Transition>
+                                    </Transition> */}
                                 </Menu>
                             </div>
                         </div>
@@ -149,7 +156,8 @@ export default function Nav() {
                         </div>
                     </Disclosure.Panel>
                 </>
-            )}
-        </Disclosure>
+            )
+            }
+        </Disclosure >
     )
 }

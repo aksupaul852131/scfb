@@ -1,0 +1,45 @@
+import React, { useEffect, useState } from "react";
+import { userAccessToken, fetchUser } from '../utlis/fetchDetails';
+import { useRouter } from "next/router";
+import Hero from "@/components/hero";
+import Blog from "@/components/blog";
+import Brands from "@/components/brands";
+import Head from "next/head";
+import client from '../../client'
+
+
+// pages/index.js
+import { createClient } from "next-sanity";
+
+
+export default function Home({ blogs }) {
+
+  console.log('bggg',
+    blogs
+  );
+  return (
+    <div>
+      <Head>
+        <title></title>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+      </Head>
+
+      <Blog blogs={blogs} />
+    </div>
+
+
+  );
+};
+
+export async function getServerSideProps(context) {
+  const blogs = await client.fetch(`*[_type == "post"][0..5]`);
+
+  return {
+    props: {
+      blogs
+    }
+  };
+}
+
+
+
