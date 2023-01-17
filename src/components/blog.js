@@ -43,7 +43,7 @@ function Blog({ blogs }) {
                                 </div>
                                 <div className="mt-6 relative">
                                     <h3 className="text-1xl font-semibold text-gray-900 dark:text-white">
-                                        <Link href={`/blog/${b.slug.current}`}>{b.Slug}</Link>
+                                        <Link href={`/blog/${b.slug.current}`}>{b.title}</Link>
                                     </h3>
 
 

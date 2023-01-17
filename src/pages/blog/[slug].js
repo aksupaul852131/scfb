@@ -156,7 +156,7 @@ const Slug = ({ post, relatedPosts }) => {
                                         </div>
                                     </footer>
                                     <p>
-                                        I recently used the services of Smart Care Home Appliances for repairing my fridge and I couldn't be happier with the results. The technician was prompt, professional and efficient in identifying and fixing the issue. The website was easy to navigate and the booking process was seamless. I highly recommend Smart Care Home Appliances for anyone in need of appliance repairs.
+                                        I recently used the services of Smart Care Home Appliances for repairing my fridge and I couldn&apos;t be happier with the results. The technician was prompt, professional and efficient in identifying and fixing the issue. The website was easy to navigate and the booking process was seamless. I highly recommend Smart Care Home Appliances for anyone in need of appliance repairs.
                                     </p>
                                     <div className="flex items-center mt-4 space-x-4">
                                         <button
