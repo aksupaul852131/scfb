@@ -51,7 +51,7 @@ const Blogs = ({ blogs }) => {
                             blogs.map((b) => (
 
 
-                                <div className="w-full px-4 md:w-1/2 lg:w-1/3">
+                                <div key={b._id} className="w-full px-4 md:w-1/2 lg:w-1/3">
                                     <div className="mx-auto mb-10 max-w-[370px]">
                                         <div className="mb-8 overflow-hidden rounded">
                                             <img
