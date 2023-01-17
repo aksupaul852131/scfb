@@ -23,7 +23,7 @@ function Blog({ blogs }) {
             <section className="text-white bg-gray-100">
                 <div className="container max-w-7xl px-6 py-12 md:py-24 mx-auto">
                     <div className="grid md:grid-cols-4 grid-cols-2 gap-2">
-                        <div className="p-4 bg-blue-700 rounded grid content-center justify-center">
+                        <div className="p-4 bg-blue-700 rounded-lg grid content-center justify-center">
                             <h2 className="title-font font-medium sm:text-4xl text-3xl text-white mb-3">
                                 <ScrollTrigger onEnter={() => setcounter(true)}>
                                     {counter && <CountUp
@@ -35,7 +35,7 @@ function Blog({ blogs }) {
                             </h2>
                             <p className="leading-relaxed">Customers</p>
                         </div>
-                        <div className="p-4 bg-blue-700 rounded grid content-center justify-center">
+                        <div className="p-4 bg-blue-700 rounded-lg grid content-center justify-center">
                             <h2 className="title-font font-medium sm:text-4xl text-3xl text-white mb-3">
                                 {counter && <CountUp
                                     start={0}
@@ -44,7 +44,7 @@ function Blog({ blogs }) {
                             </h2>
                             <p className="leading-relaxed">Services</p>
                         </div>
-                        <div className="p-4 bg-blue-700 rounded grid content-center justify-center">
+                        <div className="p-4 bg-blue-700 rounded-lg grid content-center justify-center">
                             <h2 className="title-font font-medium sm:text-4xl text-3xl text-white mb-3">
                                 {counter && <CountUp
                                     start={0}
@@ -53,7 +53,7 @@ function Blog({ blogs }) {
                             </h2>
                             <p className="leading-relaxed">Technicians</p>
                         </div>
-                        <div className="p-4 bg-blue-700 rounded grid content-center justify-center">
+                        <div className="p-4 bg-blue-700 rounded-lg grid content-center justify-center">
                             <h2 className="title-font font-medium sm:text-4xl text-3xl text-white mb-3">
                                 {counter && <CountUp
                                     start={0}
@@ -166,7 +166,7 @@ function Blog({ blogs }) {
                             </div>
                         </div>
 
-                        <div className="bg-blue-700 rounded-lg lg:w-3/5 md:w-full object-cover object-center md:mt-0 mt-12 grid content-center justify-items-center p-12">
+                        <div className="bg-blue-700 bg-[url(https://us.123rf.com/450wm/mar1ar1/mar1ar11810/mar1ar1181000342/mar1ar1181000342.jpg?ver=6)] rounded-lg lg:w-3/5 md:w-full object-cover object-center md:mt-0 mt-12 grid content-center justify-items-center p-12">
                             <h3 className="text-lg text-white">Smart Care Supaul</h3>
                             <h3 className="text-lg md:text-4xl font-bold text-white">Simple Steps</h3>
                             <p className="text-white mt-4 text-xs lg:txt-base">Customer Helpline Number - 8825105519</p>
