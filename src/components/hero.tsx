@@ -7,7 +7,7 @@ const Hero = () => {
         <>
 
             <div className=''>
-                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pt-32 pb-24 font-['Poppins']">
+                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pt-32 pb-8 font-['Poppins']">
 
                     <div className=''>
                         <h2 className='text-2xl md:text-4xl font-bold text-center'>What we can fix for you</h2>
