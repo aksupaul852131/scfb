@@ -1,9 +1,9 @@
-import { createClient } from "next-sanity";
 import { PortableText } from '@portabletext/react'
 import client from '../../../client'
 
 import imageUrlBuilder from '@sanity/image-url'
 import Link from "next/link";
+import Head from "next/head";
 
 function urlFor(source) {
     return imageUrlBuilder(client).image(source)
@@ -17,7 +17,7 @@ const ptComponents = {
             }
             return (
                 <img
-                    alt={value.alt || ' '}
+                    alt={value.alt || 'smart care supaul'}
                     loading="lazy"
                     src={urlFor(value).width(800).fit('max').auto('format')}
                 />
@@ -30,12 +30,23 @@ const Slug = ({ post, relatedPosts }) => {
 
 
     return (
-        <div className="pt-32">
+        <div>
+            <Head>
+                <title>{post.title}</title>
 
-            <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
-                <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
-                    <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+                <link rel="canonical" href={`/post/${post.slug.current}`} />
+                <meta property="og:title" content={post.title} key="title" />
+                <meta property="og:description" content={post.metadesc} key="description" />
+                <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+                <meta name='subject' content='Home Appliances Repair In Supaul' />
+
+            </Head>
+            <main className="pt-20 pb-16 lg:pt-24 lg:pb-24 bg-white dark:bg-gray-900">
+                <div className="mx-auto max-w-7xl">
+                    <article className="mx-auto w-full max-w-2xl px-2 format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
                         <h1 className="text-2xl font-bold">{post.title}</h1>
+                        <div className='mt-4 flex'><div className=' bg-blue-700 w-2 mr-3'></div><p>{post.publishedAt}</p></div>
+
                         {/* maun image */}
                         <figure>
                             <img
@@ -43,7 +54,7 @@ const Slug = ({ post, relatedPosts }) => {
                                 src={urlFor(post.mainImage).width(800).fit('max').auto('format')}
                                 alt={post.altText}
                             />
-                            <figcaption className="text-center">Digital art by Anonymous</figcaption>
+                            <figcaption className="text-center">{post.altText}</figcaption>
                         </figure>
 
                         {/* article */}
@@ -196,13 +207,13 @@ const Slug = ({ post, relatedPosts }) => {
                     <h2 className="mb-8 text-2xl font-bold text-gray-900 dark:text-white">
                         Related articles
                     </h2>
-                    <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+                    <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
                         {!relatedPosts.length > 0 && <p>No pets to show</p>}
                         {relatedPosts.length > 0 && (
 
                             relatedPosts.map((b) => (
 
-                                <article key={b._id} className="max-w-xs">
+                                <article key={b._id} className="w-full bg-gray-100 p-6 rounded-2xl">
                                     <Link href={`/blog/${b.slug.current}`}>
                                         <img
                                             src={urlFor(b.mainImage).width(600).url()}
@@ -210,11 +221,11 @@ const Slug = ({ post, relatedPosts }) => {
                                             loading="lazy"
                                             width={1000}
                                             height={667}
-                                            className="w-full h-36 mb-5 rounded-lg"
+                                            className="w-full mb-5 rounded-lg"
 
                                         />
                                     </Link>
-                                    <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+                                    <h2 className="mb-2 hover:text-blue-700 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                                         <Link href={`/blog/${b.slug.current}`}>{b.title}</Link>
                                     </h2>
 
@@ -237,7 +248,7 @@ const Slug = ({ post, relatedPosts }) => {
                             Sign up for our newsletter
                         </h2>
                         <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">
-                            Stay up to date with the roadmap progress, announcements and exclusive
+                            Stay up to date with Latest Offers & more, announcements and exclusive
                             discounts feel free to sign up with your email.
                         </p>
                         <form action="#">
@@ -271,7 +282,7 @@ const Slug = ({ post, relatedPosts }) => {
                                 <div>
                                     <button
                                         type="submit"
-                                        className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                                        className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-blue-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                                     >
                                         Subscribe
                                     </button>
@@ -280,7 +291,7 @@ const Slug = ({ post, relatedPosts }) => {
                             <div className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">
                                 We care about the protection of your data.{" "}
                                 <Link
-                                    href="#"
+                                    href="/page/privacy-policy"
                                     className="font-medium text-primary-600 dark:text-primary-500 hover:underline"
                                 >
                                     Read our Privacy Policy

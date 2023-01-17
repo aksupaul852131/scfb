@@ -27,15 +27,15 @@ const ptComponents = {
     }
 }
 
-const Page = ({ page }) => {
+const Service = ({ service }) => {
     return (
         <div>
             <Head>
-                <title>{page.title}</title>
+                <title>{service.title}</title>
 
-                <link rel="canonical" href={`/page/${page.slug.current}`} />
-                <meta property="og:title" content={page.title} key="title" />
-                <meta property="og:description" content={page.metadesc} key="description" />
+                <link rel="canonical" href={`/service/${service.slug.current}`} />
+                <meta property="og:title" content={service.title} key="title" />
+                <meta property="og:description" content={service.metadesc} key="description" />
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
                 <meta name='subject' content='Home Appliances Repair In Supaul' />
 
@@ -43,15 +43,15 @@ const Page = ({ page }) => {
             <main className="pt-20 pb-16 lg:pt-24 lg:pb-24 bg-white dark:bg-gray-900">
                 <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
                     <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
-                        <h1 className="text-2xl font-bold">{page.title}</h1>
-                        <div className='mt-4 flex'><div className=' bg-blue-700 w-2 mr-3'></div><p>{page.publishedAt}</p></div>
-
+                        <div className='bg-blue-500 h-48 w-full rounded-lg'>
+                        </div>
+                        <h1 className="text-2xl font-bold">{service.title}</h1>
 
 
                         {/* article */}
                         <div className="mt-6 mb-8 single-article">
                             <PortableText
-                                value={page.body}
+                                value={service.body}
                                 components={ptComponents}
                             />
                         </div>
@@ -69,16 +69,16 @@ const Page = ({ page }) => {
 export async function getServerSideProps(context) {
     const { slug } = context.query
 
-    // page
+    // service
 
-    const page = await client.fetch(`*[_type == "page" && slug.current == '${slug}'][0]`);
+    const service = await client.fetch(`*[_type == "service" && slug.current == '${slug}'][0]`);
 
-    console.log(page);
+    console.log(service);
     return {
         props: {
-            page
+            service
         }
     };
 }
 
-export default Page;
+export default Service;
