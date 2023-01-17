@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { userAccessToken, fetchUser } from '../utlis/fetchDetails';
-import { useRouter } from "next/router";
 import Hero from "@/components/hero";
 import Blog from "@/components/blog";
 import Brands from "@/components/brands";

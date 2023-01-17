@@ -45,4 +45,16 @@
     .single-article img {
         @apply mt-6 w-full;
     }
+
+    /* order */
+
+    .single-article ol {
+        @apply list-decimal mx-8;
+    }
+
+    .single-article ol li {
+        @apply mt-2;
+    }
+
+
 }

@@ -6,7 +6,7 @@ const Footer = () => {
 
         <>
             {/* ====== Footer Section Start */}
-            <footer className="relative z-10 bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+            <footer className="relative z-10 bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20 px-4">
                 <div className="container mx-auto">
                     <div className="-mx-4 flex flex-wrap">
                         <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
@@ -77,34 +77,34 @@ const Footer = () => {
                                 <ul>
                                     <li>
                                         <Link
-                                            href="javascript:void(0)"
+                                            href="/page/about-us"
                                             className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                                         >
-                                            About TailGrids
+                                            About SCS
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            href="javascript:void(0)"
+                                            href="/page/contact-us"
                                             className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                                         >
-                                            Contact &amp; Support
+                                            Contact Us
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            href="javascript:void(0)"
+                                            href="/page/supaul-services"
                                             className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                                         >
-                                            Success History
+                                            Our Services
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            href="javascript:void(0)"
+                                            href="/page/privacy-policy"
                                             className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                                         >
-                                            Setting &amp; Privacy
+                                            Privacy Policy
                                         </Link>
                                     </li>
                                 </ul>
@@ -118,18 +118,18 @@ const Footer = () => {
                                 <ul>
                                     <li>
                                         <Link
-                                            href="javascript:void(0)"
+                                            href="/blogs"
                                             className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                                         >
-                                            Premium Support
+                                            Blog
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            href="javascript:void(0)"
+                                            href="/page/customer-support"
                                             className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                                         >
-                                            Our Services
+                                            Customer Support
                                         </Link>
                                     </li>
                                     <li>

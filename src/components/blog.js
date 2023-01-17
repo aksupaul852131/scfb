@@ -25,7 +25,7 @@ function Blog({ blogs }) {
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
 
-                    {!blogs.length > 0 && <p>No pets to show</p>}
+                    {!blogs.length > 0 && <p>No Blogs Post</p>}
                     {blogs.length > 0 && (
 
                         blogs.map((b) => (
