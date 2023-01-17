@@ -168,8 +168,8 @@ function Blog({ blogs }) {
 
                         <div className="bg-blue-700 rounded-lg lg:w-3/5 md:w-full object-cover object-center md:mt-0 mt-12 grid content-center justify-items-center p-12">
                             <h3 className="text-lg text-white">Smart Care Supaul</h3>
-                            <h3 className="text-4xl font-bold text-white">Simple Steps</h3>
-                            <p className="text-white mt-4">Customer Helpline Number - 8825105519</p>
+                            <h3 className="text-lg md:text-4xl font-bold text-white">Simple Steps</h3>
+                            <p className="text-white mt-4 text-xs lg:txt-base">Customer Helpline Number - 8825105519</p>
                         </div>
 
                     </div>
@@ -178,7 +178,7 @@ function Blog({ blogs }) {
 
 
             <section className="">
-                <div className="container max-w-7xl pb-8 pt-12 px-0 lg:px-4 mx-auto">
+                <div className="container max-w-7xl pb-8 pt-2 px-0 lg:px-4 mx-auto">
                     <h2 className="text-2xl md:text-4xl font-semibold text-center">Blogs & Updates</h2>
                     <div className="pt-8 flex flex-wrap">
                         {!blogs.length > 0 && <p>No Blogs Post</p>}

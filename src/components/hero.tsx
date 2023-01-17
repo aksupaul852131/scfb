@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <>
 
-            <div className='bg-[url(https://livekerala.com/blog/wp-content/uploads/2021/05/airconditioners-pittappillil.jpg)] bg-cover bg-opacity-40'>
+            <div className=''>
                 <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pt-32 pb-24 font-['Poppins']">
 
                     <div className=''>
@@ -31,9 +31,9 @@ const Hero = () => {
 
             </div>
             <div className="bg-white">
-                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-14 md:py-24 font-['Poppins']">
+                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-8 md:py-16 font-['Poppins']">
                     <h2 className="text-2xl md:text-4xl font-semibold text-center">Select Your Service</h2>
-                    <div className="mt-16 grid gap-4 md:gap-8 grid-cols-2 lg:grid-cols-3">
+                    <div className="mt-10 grid gap-4 md:gap-8 grid-cols-2 lg:grid-cols-3">
 
 
                         <div className="group">
