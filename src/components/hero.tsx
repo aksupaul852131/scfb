@@ -31,7 +31,7 @@ const Hero = () => {
 
             </div>
             <div className="bg-white">
-                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-14 md:py-32 font-['Poppins']">
+                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-14 md:py-24 font-['Poppins']">
                     <h2 className="text-2xl md:text-4xl font-semibold text-center">Select Your Service</h2>
                     <div className="mt-16 grid gap-4 md:gap-8 grid-cols-2 lg:grid-cols-3">
 

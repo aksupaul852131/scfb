@@ -24,6 +24,8 @@ const Blogs = ({ blogs }) => {
                 <meta name='subject' content='Home Appliances Repair In Supaul' />
 
             </Head>
+
+
             {/* ====== Blog Section Start */}
 
             <section className="text-gray-600 body-font">
