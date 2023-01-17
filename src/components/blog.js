@@ -20,7 +20,7 @@ function Blog({ blogs }) {
 
         <div className="bg-[#fffdfd]">
 
-            <section className="text-white bg-gray-200">
+            <section className="text-white bg-gray-100">
                 <div className="container max-w-7xl px-6 py-12 md:py-24 mx-auto">
                     <div className="grid md:grid-cols-4 grid-cols-2 gap-2">
                         <div className="p-4 bg-blue-700 rounded grid content-center justify-center">
