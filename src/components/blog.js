@@ -165,11 +165,13 @@ function Blog({ blogs }) {
                                 </div>
                             </div>
                         </div>
-                        <img
-                            className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-                            src="https://media.istockphoto.com/id/1196974664/photo/set-of-home-kitchen-appliances-in-the-room-on-the-wall-background.jpg?s=612x612&w=0&k=20&c=dUSAMg-LUh6j-4437kz30w8k7KgJiR8yrTTXhGiFh0s="
-                            alt="step"
-                        />
+
+                        <div className="bg-blue-700 rounded-lg lg:w-3/5 md:w-full object-cover object-center md:mt-0 mt-12 grid content-center justify-items-center p-12">
+                            <h3 className="text-lg text-white">Smart Care Supaul</h3>
+                            <h3 className="text-4xl font-bold text-white">Simple Steps</h3>
+                            <p className="text-white mt-4">Customer Helpline Number - 8825105519</p>
+                        </div>
+
                     </div>
                 </div>
             </section>

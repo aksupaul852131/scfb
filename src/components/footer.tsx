@@ -19,7 +19,7 @@ const Footer = () => {
                     </div>
                     <div className="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
                         <Link href='https://play.google.com/store/apps/details?id=com.smartcare.supaul'>
-                            <button className="bg-gray-100 w-full inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+                            <div className="bg-gray-100 w-full inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="currentColor"
@@ -32,7 +32,7 @@ const Footer = () => {
                                     <span className="text-xs text-gray-600 mb-1">GET IT ON</span>
                                     <span className="title-font font-medium">Google Play</span>
                                 </span>
-                            </button>
+                            </div>
                         </Link>
 
                     </div>
