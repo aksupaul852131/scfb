@@ -35,6 +35,7 @@ const Page = ({ page }) => {
 
                 <link rel="canonical" href={`/page/${page.slug.current}`} />
                 <meta property="og:title" content={page.title} key="title" />
+                <meta name="description" content={page.metadesc} />
                 <meta property="og:description" content={page.metadesc} key="description" />
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
                 <meta name='subject' content='Home Appliances Repair In Supaul' />

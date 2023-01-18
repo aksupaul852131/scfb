@@ -20,6 +20,7 @@ export default function Home({ blogs }) {
         <title>Smart Care | Home Appliance Repair Services in Supaul - Expert Technicians Available Now</title>
         <meta name="google-site-verification" content="ZInZzH3oqHUCrkz_tEbsHH1zGv1G4DtrTpJp_YseZ0Y" />
         <meta property="og:title" content='Smart Care | Home Appliance Repair Services in Supaul - Expert Technicians Available Now' key="title" />
+        <meta name="description" content='Get expert repair and maintenance services for all types of home appliances in Supaul, Bihar. Smart Care technicians are trained to fix any issue quickly and efficiently.' />
         <meta property="og:description" content='Get expert repair and maintenance services for all types of home appliances in Supaul, Bihar. Smart Care technicians are trained to fix any issue quickly and efficiently.' key="description" />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
       </Head>

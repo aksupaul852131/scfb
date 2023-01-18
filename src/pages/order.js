@@ -80,6 +80,7 @@ export default function Order() {
             <Head>
                 <title>{`Order Summary | ${router.query.sname}`}</title>
                 <meta property="og:title" content={`Order Summary | ${router.query.sname}`} key="title" />
+                <meta name="description" content='Smart Care Appliances Repair Service - Service Booking Page' />
                 <meta property="og:description" content='Smart Care Appliances Repair Service - Service Booking Page' key="description" />
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
                 <meta name='subject' content='Home Appliances Repair In Supaul' />

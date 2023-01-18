@@ -36,6 +36,7 @@ const Slug = ({ post, relatedPosts }) => {
 
                 <link rel="canonical" href={`/post/${post.slug.current}`} />
                 <meta property="og:title" content={post.title} key="title" />
+                <meta name="description" content={post.metadesc} />
                 <meta property="og:description" content={post.metadesc} key="description" />
                 <meta property="og:image" content={`${urlFor(post.mainImage).width(600).fit('max').auto('format')}`} />
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />

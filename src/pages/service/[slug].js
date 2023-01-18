@@ -46,6 +46,7 @@ const Service = ({ service }) => {
 
                 <link rel="canonical" href={`/service/${service.slug.current}`} />
                 <meta property="og:title" content={service.title} key="title" />
+                <meta name="description" content={service.metadesc} />
                 <meta property="og:description" content={service.metadesc} key="description" />
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
                 <meta name='subject' content='Home Appliances Repair In Supaul' />
