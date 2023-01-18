@@ -27,7 +27,7 @@
     }
 
     .single-article p {
-        @apply font-['Poppins'] text-black leading-loose tracking-wide mt-4;
+        @apply font-['Poppins'] text-black leading-loose tracking-wide mt-1 mb-4;
     }
 
     .single-article blockquote {

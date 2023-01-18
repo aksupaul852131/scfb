@@ -43,7 +43,7 @@ export default function Options() {
                 <>
                     <Listbox.Label className="block text-sm font-medium text-gray-700">Assigned Time</Listbox.Label>
                     <div className="relative mt-3">
-                        <Listbox.Button className="relative w-full cursor-default rounded-md border border-gray-300 bg-white py-4 pl-3 pr-10 text-left shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm">
+                        <Listbox.Button className="max-w-2xl relative w-full cursor-default rounded-md border border-gray-300 bg-white py-4 pl-3 pr-10 text-left shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm">
                             <span className="flex items-center">
 
                                 <span className="ml-3 block truncate">{selected.name}</span>
