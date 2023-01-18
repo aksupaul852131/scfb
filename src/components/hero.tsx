@@ -97,7 +97,7 @@ const Hero = () => {
                         </div>
                         <div className="group">
                             <div className="relative overflow-hidden">
-                                <Link href='/service/ac-service-centre-in-supaul'>
+                                <Link href='/service/geyser-repair-in-supaul'>
                                     <img
                                         src="/geyser-repair.png"
                                         alt="art cover"
@@ -124,15 +124,8 @@ const Hero = () => {
                                 </Link>
                             </div>
                         </div>
-
-
-
-
-
-
                     </div>
-                    {/* <Image className='mt-8 w-full' src={"/aprepair.png"} alt={""} width='2000' height={'100'}
-                    /> */}
+
                 </div>
             </div>
 
