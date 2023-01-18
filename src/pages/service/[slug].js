@@ -103,7 +103,7 @@ const Service = ({ service }) => {
                             {
                                 tab == 0 ?
 
-                                    <div className='container mx-auto'>
+                                    <div className='container py-4 mx-auto'>
                                         <h2 className='font-semibold mb-4'>Book Your Service</h2>
                                         {/* button */}
                                         <Option />
@@ -138,15 +138,13 @@ const Service = ({ service }) => {
 
                                         <div>
 
-                                            <div className="bg-white dark:bg-gray-900">
-                                                <div className="container px-6 py-8 mx-auto">
+                                            <div>
+                                                <div className="py-6 mx-auto">
 
-                                                    <h2 className="mt-4 text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
-                                                        Charges
-                                                    </h2>
+                                                    <h2 className='font-semibold'>Charges</h2>
                                                     <div className="mt-6 space-y-8 xl:mt-12">
 
-                                                        <div className="flex items-center justify-between max-w-2xl px-8 py-4 mx-auto border border-blue-500 cursor-pointer rounded-xl">
+                                                        <div className="flex items-center justify-between max-w-2xl px-8 py-4 mx-auto border border-blue-500 cursor-pointer rounded-xl bg-white">
                                                             <div className="flex items-center">
                                                                 <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +171,7 @@ const Service = ({ service }) => {
                                                                 ₹0 <span className="text-base font-medium">/Unit</span>
                                                             </h2>
                                                         </div>
-                                                        <div className="flex items-center justify-between max-w-2xl px-8 py-4 mx-auto border cursor-pointer rounded-xl dark:border-gray-700">
+                                                        <div className="flex items-center justify-between max-w-2xl px-8 py-4 mx-auto border cursor-pointer rounded-xl dark:border-gray-700 bg-white">
                                                             <div className="flex items-center">
                                                                 <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
@@ -201,7 +199,7 @@ const Service = ({ service }) => {
                                                             </h2>
                                                         </div>
                                                         <div className="flex justify-center">
-                                                            <button className="px-8 py-2 tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                                                            <button className="px-8 py-2 tracking-wide text-xs md:text-base text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
                                                                 <Link href='tel://08825105519'> Help - 8825105519</Link>
                                                             </button>
                                                         </div>
@@ -212,23 +210,23 @@ const Service = ({ service }) => {
 
 
                                             <hr />
-                                            <p className='mt-4 text-center'><b>Verified</b> Technician Visit On Your Doorstep After You Complete Booking Process With Online/Call.</p>
+                                            <p className='mt-4 text-center text-xs md:text-base'><b>Verified</b> Technician Visit On Your Doorstep After You Complete Booking Process With Online/Call.</p>
                                         </div>
                                         :
                                         <div >
 
                                             {/* button */}
 
-                                            <section className="bg-white dark:bg-gray-900">
-                                                <div className="container max-w-4xl px-6 py-10 mx-auto">
+                                            <section className="">
+                                                <div className="py-4 mx-auto">
                                                     <h2 className='font-semibold'>FAQ</h2>
                                                     <div className="mt-12 space-y-8">
 
                                                         {/* faq */}
-                                                        <div className="border-2 border-gray-100 rounded-lg dark:border-gray-700">
-                                                            <button onClick={() => faq != 0 ? setfaq(0) : setfaq(1)} className="flex items-center justify-between w-full p-8">
+                                                        <div className="border-2 border-gray-300 rounded-lg dark:border-gray-700">
+                                                            <button onClick={() => faq != 0 ? setfaq(0) : setfaq(1)} className="flex items-center justify-between w-full p-4 md:p-8 bg-white">
 
-                                                                <h3 className="font-semibold text-gray-700 dark:text-white">
+                                                                <h3 className="font-semibold text-sm md:text-base text-gray-700 dark:text-white">
                                                                     How do I book a repair service through Smart Care Online?
                                                                 </h3>
                                                                 {faq == 0 ?
@@ -283,10 +281,10 @@ const Service = ({ service }) => {
 
 
                                                         {/* faq */}
-                                                        <div className="border-2 border-gray-100 rounded-lg dark:border-gray-700">
-                                                            <button onClick={() => faq != 2 ? setfaq(2) : setfaq(3)} className="flex items-center justify-between w-full p-8">
+                                                        <div className="border-2 border-gray-300 rounded-lg dark:border-gray-700">
+                                                            <button onClick={() => faq != 2 ? setfaq(2) : setfaq(3)} className="flex items-center justify-between w-full p-4 md:p-8 bg-white">
 
-                                                                <h3 className="font-semibold text-gray-700 dark:text-white">
+                                                                <h3 className="font-semibold text-sm md:text-base text-gray-700 dark:text-white">
                                                                     How much does it cost to book a repair service through Smart Care Online?
                                                                 </h3>
                                                                 {faq == 2 ?
@@ -340,10 +338,10 @@ const Service = ({ service }) => {
                                                         </div>
 
                                                         {/* faq */}
-                                                        <div className="border-2 border-gray-100 rounded-lg dark:border-gray-700">
-                                                            <button onClick={() => faq != 4 ? setfaq(4) : setfaq(5)} className="flex items-center justify-between w-full p-8">
+                                                        <div className="border-2 border-gray-300 rounded-lg dark:border-gray-700">
+                                                            <button onClick={() => faq != 4 ? setfaq(4) : setfaq(5)} className="flex items-center justify-between w-full p-4 md:p-8 bg-white">
 
-                                                                <h3 className="font-semibold text-gray-700 dark:text-white">
+                                                                <h3 className="font-semibold text-sm md:text-base text-gray-700 dark:text-white">
                                                                     How long will it take to complete the repair service?
                                                                 </h3>
                                                                 {faq == 4 ?
@@ -402,7 +400,7 @@ const Service = ({ service }) => {
 
 
                                             <hr />
-                                            <p className='mt-4 text-center'><b>Verified</b> Technician Visit On Your Doorstep After You Complete Booking Process With Online/Call.</p>
+                                            <p className='mt-4 text-center text-xs md:text-base'><b>Verified</b> Technician Visit On Your Doorstep After You Complete Booking Process With Online/Call.</p>
                                         </div>
 
                             }
