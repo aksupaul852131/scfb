@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import Hero from "@/components/hero";
 import Blog from "@/components/blog";
 import Brands from "@/components/brands";
@@ -18,7 +17,7 @@ export default function Home({ blogs }) {
   return (
     <div>
       <Head>
-        <title></title>
+        <title>Smart Care | Professional Repair Service</title>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
       </Head>
       <Hero />

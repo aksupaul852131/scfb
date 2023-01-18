@@ -8,13 +8,13 @@ const Footer = () => {
 
 
             <section className="text-gray-600 body-font bg-blue-700 font-[Poppins]">
-                <div className="container max-w-7xl px-5 py-24 mx-auto flex items-center md:flex-row flex-col">
+                <div className="max-w-7xl px-2 py-12 mx-auto flex items-center md:flex-row flex-col">
                     <div className="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
                         <h2 className="text-base text-white tracking-widest font-medium title-font mb-1">
                             Smart Care Supaul
                         </h2>
-                        <h3 className="md:text-3xl text-lg font-medium title-font text-white">
-                            Download The App For Manage Bookings
+                        <h3 className="md:text-3xl text-lg font-bold text-white">
+                            Download The App Now
                         </h3>
                     </div>
                     <div className="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">

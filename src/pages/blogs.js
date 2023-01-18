@@ -19,7 +19,6 @@ const Blogs = ({ blogs }) => {
 
                 <link rel="canonical" href='/page/blogs' />
                 <meta property="og:title" content='Blogs' key="title" />
-
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
                 <meta name='subject' content='Home Appliances Repair In Supaul' />
 

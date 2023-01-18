@@ -38,78 +38,90 @@ const Hero = () => {
 
                         <div className="group">
                             <div className="relative overflow-hidden">
-                                <img
-                                    src="/ac-repair.png"
-                                    alt="art cover"
-                                    loading="lazy"
-                                    width={1000}
-                                    height={667}
-                                    className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
-                                />
+                                <Link href='/service/ac-service-centre-in-supaul'>
+                                    <img
+                                        src="/ac-repair.png"
+                                        alt="art cover"
+                                        loading="lazy"
+                                        width={1000}
+                                        height={667}
+                                        className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                    />
+                                </Link>
                             </div>
                         </div>
 
                         <div className="group">
                             <div className="relative overflow-hidden">
-                                <img
-                                    src="/air-purifier.png"
-                                    alt="art cover"
-                                    loading="lazy"
-                                    width={1000}
-                                    height={667}
-                                    className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
-                                />
+                                <Link href='/service/ac-service-centre-in-supaul'>
+                                    <img
+                                        src="/air-purifier.png"
+                                        alt="art cover"
+                                        loading="lazy"
+                                        width={1000}
+                                        height={667}
+                                        className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                    />
+                                </Link>
                             </div>
                         </div>
 
                         <div className="group">
                             <div className="relative overflow-hidden">
-                                <img
-                                    src="/tv-repair.png"
-                                    alt="art cover"
-                                    loading="lazy"
-                                    width={1000}
-                                    height={667}
-                                    className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
-                                />
+                                <Link href='/service/ac-service-centre-in-supaul'>
+                                    <img
+                                        src="/tv-repair.png"
+                                        alt="art cover"
+                                        loading="lazy"
+                                        width={1000}
+                                        height={667}
+                                        className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                    />
+                                </Link>
                             </div>
                         </div>
 
                         <div className="group">
                             <div className="relative overflow-hidden">
-                                <img
-                                    src="/ro-repair.png"
-                                    alt="art cover"
-                                    loading="lazy"
-                                    width={1000}
-                                    height={667}
-                                    className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
-                                />
+                                <Link href='/service/ac-service-centre-in-supaul'>
+                                    <img
+                                        src="/ro-repair.png"
+                                        alt="art cover"
+                                        loading="lazy"
+                                        width={1000}
+                                        height={667}
+                                        className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                    />
+                                </Link>
                             </div>
                         </div>
                         <div className="group">
                             <div className="relative overflow-hidden">
-                                <img
-                                    src="/geyser-repair.png"
-                                    alt="art cover"
-                                    loading="lazy"
-                                    width={1000}
-                                    height={667}
-                                    className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
-                                />
+                                <Link href='/service/ac-service-centre-in-supaul'>
+                                    <img
+                                        src="/geyser-repair.png"
+                                        alt="art cover"
+                                        loading="lazy"
+                                        width={1000}
+                                        height={667}
+                                        className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                    />
+                                </Link>
                             </div>
                         </div>
 
                         <div className="group">
                             <div className="relative overflow-hidden">
-                                <img
-                                    src="/washing-machine1.png"
-                                    alt="art cover"
-                                    loading="lazy"
-                                    width={1000}
-                                    height={667}
-                                    className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
-                                />
+                                <Link href='/service/ac-service-centre-in-supaul'>
+                                    <img
+                                        src="/washing-machine1.png"
+                                        alt="art cover"
+                                        loading="lazy"
+                                        width={1000}
+                                        height={667}
+                                        className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                    />
+                                </Link>
                             </div>
                         </div>
 

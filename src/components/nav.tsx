@@ -4,10 +4,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 
 const navigation = [
-    { name: 'Home', href: '#', current: true },
-    { name: 'Team', href: '#', current: false },
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Calendar', href: '#', current: false },
+    { name: 'Home', href: '/', current: true },
+    { name: 'AC Repair', href: '/service/ac-service-centre-in-supaul', current: false },
+    { name: 'Download App', href: 'https://play.google.com/store/apps/details?id=com.smartcare.supaul', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -30,12 +29,13 @@ export default function Nav() {
                             </Link>
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                                 <div className="flex flex-shrink-0 items-center">
-
-                                    <img
-                                        className="hidden h-8 w-auto lg:block"
-                                        src="/logo1.png"
-                                        alt="Smart Care"
-                                    />
+                                    <Link href="/">
+                                        <img
+                                            className="hidden h-8 w-auto lg:block"
+                                            src="/logo1.png"
+                                            alt="Smart Care"
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
