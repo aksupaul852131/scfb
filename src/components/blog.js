@@ -276,31 +276,28 @@ function Blog({ blogs }) {
                                             <span className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                                                 Blog
                                             </span>
-                                            <h2 className="title-font text-lg font-medium text-gray-900 mb-3">
+                                            <h2 className="title-font text-lg hover:text-blue-700 font-medium text-gray-900 mb-3">
                                                 <Link href={`/blog/${b.slug.current}`}>{b.title}</Link>
                                             </h2>
                                             <p className="leading-relaxed mb-3">
                                                 {b.metadesc}
                                             </p>
                                             <div className="flex items-center flex-wrap ">
-                                                <Link href={`/blog/${b.slug.current}`} className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
-                                                    Read More
-                                                    <svg
-                                                        className="w-4 h-4 ml-2"
-                                                        viewBox="0 0 24 24"
-                                                        stroke="currentColor"
-                                                        strokeWidth={2}
-                                                        fill="none"
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                    >
-                                                        <path d="M5 12h14" />
-                                                        <path d="M12 5l7 7-7 7" />
-                                                    </svg>
-                                                </Link>
+                                                Read More
+                                                <svg
+                                                    className="w-4 h-4 ml-2"
+                                                    viewBox="0 0 24 24"
+                                                    stroke="currentColor"
+                                                    strokeWidth={2}
+                                                    fill="none"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                >
+                                                    <path d="M5 12h14" />
+                                                    <path d="M12 5l7 7-7 7" />
+                                                </svg>
+
                                                 <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 ">
-
-
                                                     <svg
                                                         className="w-4 h-4 mr-1"
                                                         stroke="currentColor"
