@@ -35,7 +35,7 @@ function classNames(...classes: string[]) {
 }
 
 export default function Options() {
-    const [selected, setSelected] = useState(people[3])
+    const [selected, setSelected] = useState(people[1])
 
     return (
         <Listbox value={selected} onChange={setSelected}>

@@ -35,6 +35,8 @@ const ptComponents = {
 const Service = ({ service }) => {
     const [tab, setTab] = useState(0);
 
+    const [faq, setfaq] = useState(0);
+
     return (
         <div>
             <Head>
@@ -52,30 +54,30 @@ const Service = ({ service }) => {
                     <article className="mx-auto w-full px-2 md:px-12 font-[Poppins]">
 
                         <div className='bg-[url(http://profiles.sulekha.com/mstore/40410510/albums/default/thumbnailfull/ac-repair-services.jpg)] bg-cover text-white overflow-hidden w-full rounded-2xl'>
-                            <div className='w-full backdrop-brightness-50 px-6 py-6 '>
+                            <div className='w-full backdrop-brightness-50 p-4 md:p-6 '>
                                 <h1 className="text-2xl font-bold mt-4">{service.title}</h1>
                                 <p className='mt-2 text-xs md:text-base w-full md:w-5/6'>Looking for reliable AC repair services in Supaul?</p>
-                                <ul className='mt-4 flex flex-wrap'>
+                                <ul className='mt-4 flex flex-wrap text-xs'>
                                     <li className='flex mr-2'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 fill-blue-700 mr-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-4 h-4 fill-blue-700 mr-1">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>
                                         Profasional Services
                                     </li>
                                     <li className='flex mr-2'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 fill-blue-700 mr-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-4 h-4 fill-blue-700 mr-1">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>
                                         Genuine Parts
                                     </li>
                                     <li className='flex mr-2'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 fill-blue-700 mr-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-4 h-4 fill-blue-700 mr-1">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>
                                         Same Day Service
                                     </li>
                                     <li className='flex'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 fill-blue-700 mr-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-4 h-4 fill-blue-700 mr-1">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>
                                         24*7 Support
@@ -95,17 +97,17 @@ const Service = ({ service }) => {
                                 <button onClick={() => setTab(2)} className={`${tab == 2 ? "bg-gray-100 " : 'hover:bg-gray-100'} inline-block p-4 text-blue-600 rounded-t-lg active dark:bg-gray-800 dark:text-blue-500`}>FAQ</button>
                             </li>
                         </ul>
-                        <div className='border w-full p-6 bg-gray-100'>
+                        <div className='border w-full p-4 md:p-6 bg-gray-100'>
 
                             {/* Tab 1 */}
                             {
                                 tab == 0 ?
 
-                                    <div>
+                                    <div className='container mx-auto'>
                                         <h2 className='font-semibold mb-4'>Book Your Service</h2>
                                         {/* button */}
                                         <Option />
-                                        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 my-8'>
+                                        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 my-8'>
                                             <div className='bg-blue-700 rounded-full py-4 flex justify-center'>
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 stroke-white mr-2">
                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
@@ -126,27 +128,279 @@ const Service = ({ service }) => {
                                             </div>
                                         </div>
                                         <hr />
-                                        <p className='mt-4 text-center text-base'><b>Verified</b> Technician Visit On Your Doorstep After You Complete Booking Process With Online/Call.</p>
+                                        <p className='mt-4 text-center text-xs md:text-base'><b>Verified</b> Technician Visit On Your Doorstep After You Complete Booking Process With Online/Call.</p>
                                     </div>
                                     : tab == 1 ?
 
 
-                                        <div >
-                                            <h2 className='font-semibold'>Book Your Service</h2>
-                                            {/* button */}
-                                            <div className='grid grid-cols-2 gap-6 my-8'>
 
+
+
+                                        <div>
+
+                                            <div className="bg-white dark:bg-gray-900">
+                                                <div className="container px-6 py-8 mx-auto">
+
+                                                    <h2 className="mt-4 text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
+                                                        Charges
+                                                    </h2>
+                                                    <div className="mt-6 space-y-8 xl:mt-12">
+
+                                                        <div className="flex items-center justify-between max-w-2xl px-8 py-4 mx-auto border border-blue-500 cursor-pointer rounded-xl">
+                                                            <div className="flex items-center">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    className="w-5 h-5 text-blue-600 sm:h-9 sm:w-9"
+                                                                    viewBox="0 0 20 20"
+                                                                    fill="currentColor"
+                                                                >
+                                                                    <path
+                                                                        fillRule="evenodd"
+                                                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                                        clipRule="evenodd"
+                                                                    />
+                                                                </svg>
+                                                                <div className="flex flex-col items-center mx-5 space-y-1">
+                                                                    <h2 className="text-lg font-medium text-gray-700 sm:text-2xl dark:text-gray-200">
+                                                                        Visiting
+                                                                    </h2>
+                                                                    <div className="px-2 text-xs text-blue-500 bg-gray-100 rounded-full sm:px-4 sm:py-1 dark:bg-gray-700 ">
+                                                                        Free 100%
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <h2 className="text-2xl font-semibold text-blue-600 sm:text-4xl">
+                                                                ₹0 <span className="text-base font-medium">/Unit</span>
+                                                            </h2>
+                                                        </div>
+                                                        <div className="flex items-center justify-between max-w-2xl px-8 py-4 mx-auto border cursor-pointer rounded-xl dark:border-gray-700">
+                                                            <div className="flex items-center">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    className="w-5 h-5 text-gray-400 sm:h-9 sm:w-9"
+                                                                    viewBox="0 0 20 20"
+                                                                    fill="currentColor"
+                                                                >
+                                                                    <path
+                                                                        fillRule="evenodd"
+                                                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                                        clipRule="evenodd"
+                                                                    />
+                                                                </svg>
+                                                                <div className="flex flex-col mx-5 space-y-1">
+                                                                    <h2 className="text-lg font-medium text-gray-700 sm:text-2xl dark:text-gray-200">
+                                                                        Service Charge
+                                                                    </h2>
+                                                                    <div className="px-2 text-center text-xs text-blue-500 bg-gray-100 rounded-full sm:px-4 sm:py-1 dark:bg-gray-700 ">
+                                                                        Starting Price
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <h2 className="text-2xl font-semibold text-gray-500 sm:text-4xl dark:text-gray-300">
+                                                                ₹299 <span className="text-base font-medium">/Unit</span>
+                                                            </h2>
+                                                        </div>
+                                                        <div className="flex justify-center">
+                                                            <button className="px-8 py-2 tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                                                                <Link href='tel://08825105519'> Help - 8825105519</Link>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
+
+
+
                                             <hr />
                                             <p className='mt-4 text-center'><b>Verified</b> Technician Visit On Your Doorstep After You Complete Booking Process With Online/Call.</p>
                                         </div>
                                         :
                                         <div >
-                                            <h2 className='font-semibold'>Rate Card</h2>
-                                            {/* button */}
-                                            <div className='grid grid-cols-2 gap-6 my-8'>
 
-                                            </div>
+                                            {/* button */}
+
+                                            <section className="bg-white dark:bg-gray-900">
+                                                <div className="container max-w-4xl px-6 py-10 mx-auto">
+                                                    <h2 className='font-semibold'>FAQ</h2>
+                                                    <div className="mt-12 space-y-8">
+
+                                                        {/* faq */}
+                                                        <div className="border-2 border-gray-100 rounded-lg dark:border-gray-700">
+                                                            <button onClick={() => faq != 0 ? setfaq(0) : setfaq(1)} className="flex items-center justify-between w-full p-8">
+
+                                                                <h3 className="font-semibold text-gray-700 dark:text-white">
+                                                                    How do I book a repair service through Smart Care Online?
+                                                                </h3>
+                                                                {faq == 0 ?
+                                                                    <span className="text-gray-400 bg-gray-200 rounded-full">
+                                                                        <svg
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            className="w-6 h-6"
+                                                                            fill="none"
+                                                                            viewBox="0 0 24 24"
+                                                                            stroke="currentColor"
+                                                                        >
+                                                                            <path
+                                                                                strokeLinecap="round"
+                                                                                strokeLinejoin="round"
+                                                                                strokeWidth={2}
+                                                                                d="M18 12H6"
+                                                                            />
+                                                                        </svg>
+                                                                    </span>
+                                                                    :
+                                                                    <span className="text-white bg-blue-500 rounded-full">
+                                                                        <svg
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            className="w-6 h-6"
+                                                                            fill="none"
+                                                                            viewBox="0 0 24 24"
+                                                                            stroke="currentColor"
+                                                                        >
+                                                                            <path
+                                                                                strokeLinecap="round"
+                                                                                strokeLinejoin="round"
+                                                                                strokeWidth={2}
+                                                                                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                                                                            />
+                                                                        </svg>
+                                                                    </span>
+                                                                }
+                                                            </button>
+                                                            {
+                                                                faq == 0 ?
+
+
+                                                                    <div>
+                                                                        <hr className="border-gray-200 dark:border-gray-700" />
+                                                                        <p className="p-8 text-sm text-gray-500 dark:text-gray-300">
+                                                                            You can book a repair service by visiting the Smart Care Online website and selecting the type of appliance you need repair for, then choose the date and time for the repair service.
+                                                                        </p>
+
+                                                                    </div> : <div></div>
+                                                            }
+                                                        </div>
+
+
+                                                        {/* faq */}
+                                                        <div className="border-2 border-gray-100 rounded-lg dark:border-gray-700">
+                                                            <button onClick={() => faq != 2 ? setfaq(2) : setfaq(3)} className="flex items-center justify-between w-full p-8">
+
+                                                                <h3 className="font-semibold text-gray-700 dark:text-white">
+                                                                    How much does it cost to book a repair service through Smart Care Online?
+                                                                </h3>
+                                                                {faq == 2 ?
+                                                                    <span className="text-gray-400 bg-gray-200 rounded-full">
+                                                                        <svg
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            className="w-6 h-6"
+                                                                            fill="none"
+                                                                            viewBox="0 0 24 24"
+                                                                            stroke="currentColor"
+                                                                        >
+                                                                            <path
+                                                                                strokeLinecap="round"
+                                                                                strokeLinejoin="round"
+                                                                                strokeWidth={2}
+                                                                                d="M18 12H6"
+                                                                            />
+                                                                        </svg>
+                                                                    </span>
+                                                                    :
+                                                                    <span className="text-white bg-blue-500 rounded-full">
+                                                                        <svg
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            className="w-6 h-6"
+                                                                            fill="none"
+                                                                            viewBox="0 0 24 24"
+                                                                            stroke="currentColor"
+                                                                        >
+                                                                            <path
+                                                                                strokeLinecap="round"
+                                                                                strokeLinejoin="round"
+                                                                                strokeWidth={2}
+                                                                                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                                                                            />
+                                                                        </svg>
+                                                                    </span>
+                                                                }
+                                                            </button>
+                                                            {
+                                                                faq == 2 ?
+
+
+                                                                    <div>
+                                                                        <hr className="border-gray-200 dark:border-gray-700" />
+                                                                        <p className="p-8 text-sm text-gray-500 dark:text-gray-300">
+                                                                            The cost of the repair service will depend on the type of appliance and the issue that needs to be repaired. You will be able to see the cost before confirming the booking.
+                                                                        </p>
+
+                                                                    </div> : <div></div>
+                                                            }
+                                                        </div>
+
+                                                        {/* faq */}
+                                                        <div className="border-2 border-gray-100 rounded-lg dark:border-gray-700">
+                                                            <button onClick={() => faq != 4 ? setfaq(4) : setfaq(5)} className="flex items-center justify-between w-full p-8">
+
+                                                                <h3 className="font-semibold text-gray-700 dark:text-white">
+                                                                    How long will it take to complete the repair service?
+                                                                </h3>
+                                                                {faq == 4 ?
+                                                                    <span className="text-gray-400 bg-gray-200 rounded-full">
+                                                                        <svg
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            className="w-6 h-6"
+                                                                            fill="none"
+                                                                            viewBox="0 0 24 24"
+                                                                            stroke="currentColor"
+                                                                        >
+                                                                            <path
+                                                                                strokeLinecap="round"
+                                                                                strokeLinejoin="round"
+                                                                                strokeWidth={2}
+                                                                                d="M18 12H6"
+                                                                            />
+                                                                        </svg>
+                                                                    </span>
+                                                                    :
+                                                                    <span className="text-white bg-blue-500 rounded-full">
+                                                                        <svg
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            className="w-6 h-6"
+                                                                            fill="none"
+                                                                            viewBox="0 0 24 24"
+                                                                            stroke="currentColor"
+                                                                        >
+                                                                            <path
+                                                                                strokeLinecap="round"
+                                                                                strokeLinejoin="round"
+                                                                                strokeWidth={2}
+                                                                                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                                                                            />
+                                                                        </svg>
+                                                                    </span>
+                                                                }
+                                                            </button>
+                                                            {
+                                                                faq == 4 ?
+
+
+                                                                    <div>
+                                                                        <hr className="border-gray-200 dark:border-gray-700" />
+                                                                        <p className="p-8 text-sm text-gray-500 dark:text-gray-300">
+                                                                            The time it takes to complete the repair service will depend on the type of appliance and the issue that needs to be repaired. The repair technician will provide an estimate at the time of the service.
+                                                                        </p>
+
+                                                                    </div> : <div></div>
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+
+
+
                                             <hr />
                                             <p className='mt-4 text-center'><b>Verified</b> Technician Visit On Your Doorstep After You Complete Booking Process With Online/Call.</p>
                                         </div>
