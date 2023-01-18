@@ -2,7 +2,7 @@ import { Fragment, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 
-const people = [
+const times = [
     {
         id: 1,
         name: 'Urgent',
@@ -35,7 +35,7 @@ function classNames(...classes: string[]) {
 }
 
 export default function Options() {
-    const [selected, setSelected] = useState(people[1])
+    const [selected, setSelected] = useState(times[1])
 
     return (
         <Listbox value={selected} onChange={setSelected}>
@@ -61,7 +61,7 @@ export default function Options() {
                             leaveTo="opacity-0"
                         >
                             <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
-                                {people.map((person) => (
+                                {times.map((person) => (
                                     <Listbox.Option
                                         key={person.id}
                                         className={({ active }) =>

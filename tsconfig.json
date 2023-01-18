@@ -32,7 +32,8 @@
     "src/pages/create-blog.js",
     "src/pages/index.js",
     "src/components/blog.js",
-    "src/pages/blog/[slug].js"
+    "src/pages/blog/[slug].js",
+    "src/pages/order.js"
   ],
   "exclude": [
     "node_modules"
