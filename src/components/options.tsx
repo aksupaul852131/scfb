@@ -61,16 +61,16 @@ export default function Options() {
                             leaveTo="opacity-0"
                         >
                             <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
-                                {times.map((person) => (
+                                {times.map((item) => (
                                     <Listbox.Option
-                                        key={person.id}
+                                        key={item.id}
                                         className={({ active }) =>
                                             classNames(
                                                 active ? 'text-white bg-indigo-600' : 'text-gray-900',
                                                 'relative cursor-default select-none py-2 pl-3 pr-9'
                                             )
                                         }
-                                        value={person}
+                                        value={item}
                                     >
                                         {({ selected, active }) => (
                                             <>
@@ -79,7 +79,7 @@ export default function Options() {
                                                     <span
                                                         className={classNames(selected ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
                                                     >
-                                                        {person.name}
+                                                        {item.name}
                                                     </span>
                                                 </div>
 
