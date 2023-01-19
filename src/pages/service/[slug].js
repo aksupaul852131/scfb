@@ -8,6 +8,7 @@ import Option from '../../components/options'
 
 import imageUrlBuilder from '@sanity/image-url'
 import React, { useState } from 'react'
+import StructuredData from "../../components/StructuredData"
 
 function urlFor(source) {
     return imageUrlBuilder(client).image(source)
@@ -46,7 +47,7 @@ const Service = ({ service }) => {
                 <meta name="description" content={service.metadesc} />
 
                 <link rel="canonical" href={`http://smartcaresupaul.in/service/${service.slug.current}`} />
-                <meta property="og:url" content={`http://smartcaresupaul.in/service/${page.slug.current}`} />
+                <meta property="og:url" content={`http://smartcaresupaul.in/service/${service.slug.current}`} />
 
 
                 <meta property="og:title" content={service.title} key="title" />
@@ -55,6 +56,34 @@ const Service = ({ service }) => {
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
                 <meta name='subject' content='Home Appliances Repair In Supaul' />
 
+
+                {/* schema */}
+                <StructuredData data={{
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    "mainEntity": [{
+                        "@type": "Question",
+                        "name": "How do I book a repair service through Smart Care Online?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "You can book a repair service by visiting the Smart Care Online website and selecting the type of appliance you need repair for, then choose the date and time for the repair service."
+                        }
+                    }, {
+                        "@type": "Question",
+                        "name": "How much does it cost to book a repair service through Smart Care Online?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The cost of the repair service will depend on the type of appliance and the issue that needs to be repaired. You will be able to see the cost before confirming the booking."
+                        }
+                    }, {
+                        "@type": "Question",
+                        "name": "How long will it take to complete the repair service?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The time it takes to complete the repair service will depend on the type of appliance and the issue that needs to be repaired. The repair technician will provide an estimate at the time of the service."
+                        }
+                    }]
+                }}} />
             </Head>
             <main className="pt-20 pb-16 lg:pt-24 lg:pb-24 bg-white dark:bg-gray-900">
                 <div className="mx-auto max-w-7xl ">

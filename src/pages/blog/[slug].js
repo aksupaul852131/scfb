@@ -4,6 +4,7 @@ import client from '../../../client'
 import imageUrlBuilder from '@sanity/image-url'
 import Link from "next/link";
 import Head from "next/head";
+import StructuredData from "../../components/StructuredData"
 
 function urlFor(source) {
     return imageUrlBuilder(client).image(source)
@@ -28,6 +29,32 @@ const ptComponents = {
 
 const Slug = ({ post, relatedPosts }) => {
 
+    const structuredData =
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `http://smartcaresupaul.in/post/${post.slug.current}`
+        },
+        "headline": post.title,
+        "description": post.metadesc,
+        "image": `${urlFor(post.mainImage).width(800).fit('max').auto('format')}`,
+        "author": {
+            "@type": "Organization",
+            "name": "Smart Care",
+            "url": "http://smartcaresupaul.in/page/about-us"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Smart Care",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.smartcaresupaul.in/logo1.png"
+            }
+        },
+        "datePublished": "2023-01-02"
+    }
 
     return (
         <div>
@@ -44,6 +71,9 @@ const Slug = ({ post, relatedPosts }) => {
                 <meta property="og:image" content={`${urlFor(post.mainImage).width(600).fit('max').auto('format')}`} />
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
 
+
+                {/* schema */}
+                <StructuredData data={structuredData} />
 
             </Head>
             <main className="pt-20 pb-16 lg:pt-24 lg:pb-24 bg-white dark:bg-gray-900">
