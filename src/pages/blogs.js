@@ -17,7 +17,7 @@ const Blogs = ({ blogs }) => {
             <Head>
                 <title>Blogs</title>
 
-                <link rel="canonical" href='/page/blogs' />
+                <link rel="canonical" href='http://smartcaresupaul.in/page/blogs' />
                 <meta property="og:title" content='Blogs' key="title" />
                 <meta name="description" content='Smart Care - all offers & care prodcut posts regular publish here' />
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />

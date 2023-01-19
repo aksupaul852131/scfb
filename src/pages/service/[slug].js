@@ -43,11 +43,15 @@ const Service = ({ service }) => {
         <div>
             <Head>
                 <title>{service.title}</title>
-
-                <link rel="canonical" href={`/service/${service.slug.current}`} />
-                <meta property="og:title" content={service.title} key="title" />
                 <meta name="description" content={service.metadesc} />
+
+                <link rel="canonical" href={`http://smartcaresupaul.in/service/${service.slug.current}`} />
+                <meta property="og:url" content={`http://smartcaresupaul.in/service/${page.slug.current}`} />
+
+
+                <meta property="og:title" content={service.title} key="title" />
                 <meta property="og:description" content={service.metadesc} key="description" />
+                <meta property="og:image" content="https://ia.media-imdb.com/imahttps://www.smartcaresupaul.in/app_sc.pngges/rock.jpg" />
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
                 <meta name='subject' content='Home Appliances Repair In Supaul' />
 

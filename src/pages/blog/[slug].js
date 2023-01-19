@@ -33,14 +33,16 @@ const Slug = ({ post, relatedPosts }) => {
         <div>
             <Head>
                 <title>{post.title}</title>
-
-                <link rel="canonical" href={`/post/${post.slug.current}`} />
-                <meta property="og:title" content={post.title} key="title" />
                 <meta name="description" content={post.metadesc} />
+                <meta name='subject' content='Blog - Smart Care' />
+
+                <link rel="canonical" href={`http://smartcaresupaul.in/post/${post.slug.current}`} />
+
+                <meta property="og:url" content={`http://smartcaresupaul.in/post/${post.slug.current}`} />
+                <meta property="og:title" content={post.title} key="title" />
                 <meta property="og:description" content={post.metadesc} key="description" />
                 <meta property="og:image" content={`${urlFor(post.mainImage).width(600).fit('max').auto('format')}`} />
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
-                <meta name='subject' content='Home Appliances Repair In Supaul' />
 
             </Head>
             <main className="pt-20 pb-16 lg:pt-24 lg:pb-24 bg-white dark:bg-gray-900">

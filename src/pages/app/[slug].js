@@ -33,7 +33,7 @@ const App = ({ app }) => {
             <Head>
                 <title>{app.title}</title>
 
-                <link rel="canonical" href={`/page/${app.slug.current}`} />
+                <link rel="canonical" href={`http://smartcaresupaul.in/page/${app.slug.current}`} />
                 <meta property="og:title" content={app.title} key="title" />
                 <meta property="og:description" content={app.metadesc} key="description" />
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />

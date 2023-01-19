@@ -32,13 +32,18 @@ const Page = ({ page }) => {
         <div>
             <Head>
                 <title>{page.title}</title>
-
-                <link rel="canonical" href={`/page/${page.slug.current}`} />
-                <meta property="og:title" content={page.title} key="title" />
                 <meta name="description" content={page.metadesc} />
+                <meta name='subject' content='Page | Smart Care' />
+
+                <link rel="canonical" href={`http://smartcaresupaul.in/page/${page.slug.current}`} />
+                <meta property="og:url" content={`http://smartcaresupaul.in/page/${page.slug.current}`} />
+
+
+                <meta property="og:title" content={page.title} key="title" />
                 <meta property="og:description" content={page.metadesc} key="description" />
+                <meta property="og:image" content="https://ia.media-imdb.com/imahttps://www.smartcaresupaul.in/app_sc.pngges/rock.jpg" />
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
-                <meta name='subject' content='Home Appliances Repair In Supaul' />
+
 
             </Head>
             <main className="pt-20 pb-16 lg:pt-24 lg:pb-24 bg-white dark:bg-gray-900">

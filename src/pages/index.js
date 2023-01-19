@@ -11,17 +11,21 @@ import { createClient } from "next-sanity";
 
 export default function Home({ blogs }) {
 
-  console.log('bggg',
-    blogs
-  );
+
   return (
     <div>
       <Head>
         <title>Smart Care | Home Appliance Repair Services in Supaul - Expert Technicians Available Now</title>
-        <meta name="google-site-verification" content="ZInZzH3oqHUCrkz_tEbsHH1zGv1G4DtrTpJp_YseZ0Y" />
-        <meta property="og:title" content='Smart Care | Home Appliance Repair Services in Supaul - Expert Technicians Available Now' key="title" />
         <meta name="description" content='Get expert repair and maintenance services for all types of home appliances in Supaul, Bihar. Smart Care technicians are trained to fix any issue quickly and efficiently.' />
-        <meta property="og:description" content='Get expert repair and maintenance services for all types of home appliances in Supaul, Bihar. Smart Care technicians are trained to fix any issue quickly and efficiently.' key="description" />
+
+        <link rel="canonical" href='http://smartcaresupaul.in' />
+        <meta name="google-site-verification" content="ZInZzH3oqHUCrkz_tEbsHH1zGv1G4DtrTpJp_YseZ0Y" />
+
+        {/* OG  */}
+        <meta property="og:url" content="http://smartcaresupaul.in" />
+        <meta property="og:title" content='Smart Care | Home Appliance Repair Services in Supaul - Expert Technicians Available Now' />
+        <meta property="og:url" content="https://www.smartcaresupaul.in/app_sc.png" />
+        <meta property="og:description" content='Get expert repair and maintenance services for all types of home appliances in Supaul, Bihar. Smart Care technicians are trained to fix any issue quickly and efficiently.' />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
       </Head>
       <Hero />
