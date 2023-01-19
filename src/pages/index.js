@@ -3,7 +3,6 @@ import Blog from "@/components/blog";
 import Brands from "@/components/brands";
 import Head from "next/head";
 import client from '../../client'
-import StructuredData from "@/components/StructuredData";
 
 export default function Home({ blogs }) {
 
@@ -39,7 +38,11 @@ export default function Home({ blogs }) {
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
 
         {/* schema */}
-        <StructuredData data={structuredData} />
+        <script
+          key="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
 
       </Head>
       <Hero />

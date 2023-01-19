@@ -8,7 +8,6 @@ import Option from '../../components/options'
 
 import imageUrlBuilder from '@sanity/image-url'
 import React, { useState } from 'react'
-import StructuredData from "../../components/StructuredData"
 
 function urlFor(source) {
     return imageUrlBuilder(client).image(source)
@@ -70,14 +69,14 @@ const Service = ({ service }) => {
     return (
         <div>
             <Head>
-                <title>{service.title}</title>
+                <title>{`${service.title} | Smart Care`}</title>
                 <meta name="description" content={service.metadesc} />
 
                 <link rel="canonical" href={`http://smartcaresupaul.in/service/${service.slug.current}`} />
                 <meta property="og:url" content={`http://smartcaresupaul.in/service/${service.slug.current}`} />
 
 
-                <meta property="og:title" content={service.title} key="title" />
+                <meta property="og:title" content={`${service.title} | Smart Care`} key="title" />
                 <meta property="og:description" content={service.metadesc} key="description" />
                 <meta property="og:image" content="https://ia.media-imdb.com/imahttps://www.smartcaresupaul.in/app_sc.pngges/rock.jpg" />
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
@@ -85,7 +84,11 @@ const Service = ({ service }) => {
 
 
                 {/* schema */}
-                <StructuredData data={structuredData} />
+                <script
+                    key="structured-data"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+                />
             </Head>
             <main className="pt-20 pb-16 lg:pt-24 lg:pb-24 bg-white dark:bg-gray-900">
                 <div className="mx-auto max-w-7xl ">

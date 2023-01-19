@@ -4,7 +4,6 @@ import client from '../../../client'
 import imageUrlBuilder from '@sanity/image-url'
 import Link from "next/link";
 import Head from "next/head";
-import StructuredData from "../../components/StructuredData"
 
 function urlFor(source) {
     return imageUrlBuilder(client).image(source)
@@ -60,21 +59,25 @@ const Slug = ({ post, relatedPosts }) => {
     return (
         <div>
             <Head>
-                <title>{post.title}</title>
+                <title>{`${post.title} | Smart Care`}</title>
                 <meta name="description" content={post.metadesc} />
                 <meta name='subject' content='Blog - Smart Care' />
 
                 <link rel="canonical" href={`http://smartcaresupaul.in/post/${post.slug.current}`} />
 
                 <meta property="og:url" content={`http://smartcaresupaul.in/post/${post.slug.current}`} />
-                <meta property="og:title" content={post.title} key="title" />
+                <meta property="og:title" content={`${post.title} | Smart Care`} key="title" />
                 <meta property="og:description" content={post.metadesc} key="description" />
                 <meta property="og:image" content={`${urlFor(post.mainImage).width(600).fit('max').auto('format')}`} />
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
 
 
                 {/* schema */}
-                <StructuredData data={structuredData} />
+                <script
+                    key="structured-data"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+                />
 
             </Head>
             <main className="pt-20 pb-16 lg:pt-24 lg:pb-24 bg-white dark:bg-gray-900">
