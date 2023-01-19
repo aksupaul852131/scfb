@@ -53,7 +53,8 @@ const Slug = ({ post, relatedPosts }) => {
                 "url": "https://www.smartcaresupaul.in/logo1.png"
             }
         },
-        "datePublished": "2023-01-02"
+        "datePublished":
+            post.publishedAt,
     }
 
     return (
