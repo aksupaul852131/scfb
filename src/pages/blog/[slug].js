@@ -44,6 +44,9 @@ const Slug = ({ post, relatedPosts }) => {
                 <meta property="og:image" content={`${urlFor(post.mainImage).width(600).fit('max').auto('format')}`} />
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
 
+
+                {/* schema */}
+                <StructuredData data={structuredData} />
             </Head>
             <main className="pt-20 pb-16 lg:pt-24 lg:pb-24 bg-white dark:bg-gray-900">
                 <div className="mx-auto max-w-7xl">

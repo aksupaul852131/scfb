@@ -3,14 +3,24 @@ import Blog from "@/components/blog";
 import Brands from "@/components/brands";
 import Head from "next/head";
 import client from '../../client'
-
-
-// pages/index.js
-import { createClient } from "next-sanity";
-
+import StructuredData from "@/components/StructuredData";
 
 export default function Home({ blogs }) {
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Smart Care",
+    "alternateName": "Smart Care Supaul",
+    "url": "https://www.smartcaresupaul.in/",
+    "logo": "https://www.smartcaresupaul.in/logo1.png",
+    "sameAs": [
+      "https://www.facebook.com/smartcaresupaul",
+      "https://twitter.com/SmartCareSupaul",
+      "https://www.youtube.com/@smartcare-servicecentersup9750",
+      "https://www.linkedin.com/in/smart-care-b7a13b262/"
+    ]
+  };
 
   return (
     <div>
@@ -27,6 +37,10 @@ export default function Home({ blogs }) {
         <meta property="og:url" content="https://www.smartcaresupaul.in/app_sc.png" />
         <meta property="og:description" content='Get expert repair and maintenance services for all types of home appliances in Supaul, Bihar. Smart Care technicians are trained to fix any issue quickly and efficiently.' />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+
+        {/* schema */}
+        <StructuredData data={structuredData} />
+
       </Head>
       <Hero />
       <Blog blogs={blogs} />
