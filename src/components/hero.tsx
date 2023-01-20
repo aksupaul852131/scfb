@@ -30,11 +30,11 @@ const Hero = () => {
 
             </div>
 
-            <div className="relative rounded-xl overflow-auto max-w-7xl ">
+            <div className="relative rounded-xl overflow-auto mx-auto max-w-7xl ">
 
-                <div className="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-2 md:pb-14 mt-12">
+                <div className="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-4 mb-6 md:pb-14 mt-8">
 
-                    <div className="snap-center shrink-0 first:pl-6 last:pr-8">
+                    <div className="snap-center shrink-0 first:pl-4 last:pr-8">
 
                         <div className="group">
                             <div className="relative overflow-hidden">
