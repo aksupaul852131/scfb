@@ -30,11 +30,11 @@ const Hero = () => {
 
             </div>
 
-            <div className="relative rounded-xl overflow-auto mx-auto max-w-7xl ">
+            <div className="relative rounded-xl mx-auto max-w-7xl ">
 
-                <div className="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-4 mb-6 md:pb-14 mt-8">
+                <div className="relative w-full flex gap-2 snap-x snap-mandatory no-scrollbar overflow-x-auto mb-6 md:pb-14 mt-8 select-none">
 
-                    <div className="snap-center shrink-0 first:pl-4 last:pr-8">
+                    <div className="snap-center shrink-0 first:pl-4 last:pr-2">
 
                         <div className="group">
                             <div className="relative overflow-hidden">
@@ -45,7 +45,7 @@ const Hero = () => {
                                         loading="lazy"
                                         width={1000}
                                         height={667}
-                                        className="shrink-0 w-60 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
+                                        className="shrink-0 w-60 h-32 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
                                     />
                                 </Link>
                             </div>
@@ -54,7 +54,7 @@ const Hero = () => {
                     </div>
 
 
-                    <div className="snap-center shrink-0 first:pl-8 last:pr-8">
+                    <div className="snap-center shrink-0 first:pl-2 last:pr-0">
                         <div className="group">
                             <div className="relative overflow-hidden">
                                 <Link href='/service/ac-service-centre-in-supaul'>
@@ -64,7 +64,7 @@ const Hero = () => {
                                         loading="lazy"
                                         width={1000}
                                         height={667}
-                                        className="shrink-0 w-60 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
+                                        className="shrink-0 w-60 h-32 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
                                     />
                                 </Link>
                             </div>
@@ -72,7 +72,7 @@ const Hero = () => {
                     </div>
 
 
-                    <div className="snap-center shrink-0 first:pl-8 last:pr-8">
+                    <div className="snap-center shrink-0 first:pl-2 last:pr-0">
                         <div className="group">
                             <div className="relative overflow-hidden">
                                 <Link href='/service/ac-service-centre-in-supaul'>
@@ -82,7 +82,7 @@ const Hero = () => {
                                         loading="lazy"
                                         width={1000}
                                         height={667}
-                                        className="shrink-0 w-60 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
+                                        className="shrink-0 w-60 h-32 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
                                     />
                                 </Link>
                             </div>
@@ -90,7 +90,7 @@ const Hero = () => {
                     </div>
 
 
-                    <div className="snap-center shrink-0 first:pl-8 last:pr-8">
+                    <div className="snap-center shrink-0 first:pl-2 last:pr-0">
                         <div className="group">
                             <div className="relative overflow-hidden">
                                 <Link href='/service/ac-service-centre-in-supaul'>
@@ -100,14 +100,14 @@ const Hero = () => {
                                         loading="lazy"
                                         width={1000}
                                         height={667}
-                                        className="shrink-0 w-60 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
+                                        className="shrink-0 w-60 h-32 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
                                     />
                                 </Link>
                             </div>
                         </div>
                     </div>
 
-                    <div className="snap-center shrink-0 first:pl-8 last:pr-8">
+                    <div className="snap-center shrink-0 first:pl-2 last:pr-0">
                         <div className="group">
                             <div className="relative overflow-hidden">
                                 <Link href='/service/ac-service-centre-in-supaul'>
@@ -117,13 +117,13 @@ const Hero = () => {
                                         loading="lazy"
                                         width={1000}
                                         height={667}
-                                        className="shrink-0 w-60 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
+                                        className="shrink-0 w-60 h-32 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
                                     />
                                 </Link>
                             </div>
                         </div>
                     </div>
-                    <div className="snap-center shrink-0 first:pl-8 last:pr-8">
+                    <div className="snap-center shrink-0 first:pl-2 last:pr-0">
                         <div className="group">
                             <div className="relative overflow-hidden">
                                 <Link href='/service/ac-service-centre-in-supaul'>
@@ -133,7 +133,7 @@ const Hero = () => {
                                         loading="lazy"
                                         width={1000}
                                         height={667}
-                                        className="shrink-0 w-60 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
+                                        className="shrink-0 w-60 h-32 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
                                     />
                                 </Link>
                             </div>
