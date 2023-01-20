@@ -34,7 +34,7 @@ const Hero = () => {
 
                 <div className="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-2 md:pb-14 mt-12">
 
-                    <div className="snap-center shrink-0 first:pl-0 last:pr-8">
+                    <div className="snap-center shrink-0 first:pl-6 last:pr-8">
 
                         <div className="group">
                             <div className="relative overflow-hidden">
