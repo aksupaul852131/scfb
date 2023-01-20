@@ -1,5 +1,4 @@
 import React from "react";
-import Image from 'next/image'
 import Link from 'next/link'
 
 const Hero = () => {
@@ -30,11 +29,12 @@ const Hero = () => {
                 </div>
 
             </div>
-            <div className="bg-white">
-                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-8 md:py-16 font-['Poppins']">
-                    <h2 className="text-2xl md:text-4xl font-semibold text-center">Select Your Service</h2>
-                    <div className="mt-10 grid gap-4 md:gap-8 grid-cols-2 lg:grid-cols-3">
 
+            <div className="relative rounded-xl overflow-auto max-w-7xl ">
+
+                <div className="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-2 md:pb-14 mt-12">
+
+                    <div className="snap-center shrink-0 first:pl-0 last:pr-8">
 
                         <div className="group">
                             <div className="relative overflow-hidden">
@@ -45,12 +45,16 @@ const Hero = () => {
                                         loading="lazy"
                                         width={1000}
                                         height={667}
-                                        className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                        className="shrink-0 w-60 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
                                     />
                                 </Link>
                             </div>
                         </div>
 
+                    </div>
+
+
+                    <div className="snap-center shrink-0 first:pl-8 last:pr-8">
                         <div className="group">
                             <div className="relative overflow-hidden">
                                 <Link href='/service/ac-service-centre-in-supaul'>
@@ -60,12 +64,15 @@ const Hero = () => {
                                         loading="lazy"
                                         width={1000}
                                         height={667}
-                                        className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                        className="shrink-0 w-60 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
                                     />
                                 </Link>
                             </div>
                         </div>
+                    </div>
 
+
+                    <div className="snap-center shrink-0 first:pl-8 last:pr-8">
                         <div className="group">
                             <div className="relative overflow-hidden">
                                 <Link href='/service/ac-service-centre-in-supaul'>
@@ -75,12 +82,15 @@ const Hero = () => {
                                         loading="lazy"
                                         width={1000}
                                         height={667}
-                                        className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                        className="shrink-0 w-60 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
                                     />
                                 </Link>
                             </div>
                         </div>
+                    </div>
 
+
+                    <div className="snap-center shrink-0 first:pl-8 last:pr-8">
                         <div className="group">
                             <div className="relative overflow-hidden">
                                 <Link href='/service/ac-service-centre-in-supaul'>
@@ -90,26 +100,30 @@ const Hero = () => {
                                         loading="lazy"
                                         width={1000}
                                         height={667}
-                                        className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                        className="shrink-0 w-60 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
                                     />
                                 </Link>
                             </div>
                         </div>
+                    </div>
+
+                    <div className="snap-center shrink-0 first:pl-8 last:pr-8">
                         <div className="group">
                             <div className="relative overflow-hidden">
-                                <Link href='/service/geyser-repair-in-supaul'>
+                                <Link href='/service/ac-service-centre-in-supaul'>
                                     <img
                                         src="/geyser-repair.png"
                                         alt="art cover"
                                         loading="lazy"
                                         width={1000}
                                         height={667}
-                                        className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                        className="shrink-0 w-60 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
                                     />
                                 </Link>
                             </div>
                         </div>
-
+                    </div>
+                    <div className="snap-center shrink-0 first:pl-8 last:pr-8">
                         <div className="group">
                             <div className="relative overflow-hidden">
                                 <Link href='/service/ac-service-centre-in-supaul'>
@@ -119,7 +133,7 @@ const Hero = () => {
                                         loading="lazy"
                                         width={1000}
                                         height={667}
-                                        className="w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                                        className="shrink-0 w-60 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
                                     />
                                 </Link>
                             </div>
@@ -128,9 +142,6 @@ const Hero = () => {
 
                 </div>
             </div>
-
-
-
 
         </>
 
