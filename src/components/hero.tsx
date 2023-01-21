@@ -6,139 +6,52 @@ const Hero = () => {
         <>
 
             <div className=''>
-                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pt-32 pb-8 font-['Poppins'] grid grid-cols-1">
+                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pt-32 pb-8 font-['Poppins'] grid grid-cols-1 lg:grid-cols-2 gap-8">
 
                     <div className="grid grid-cols-4 gap-8 px-4">
                         <div className="grid grid-cols-1 justify-items-center">
                             <img src='/opt/opt1.png' />
                             <h3 className="text-center mt-2 font-medium text-xs lg:text-base">AC Repair</h3>
                         </div>
+                        <div className="grid grid-cols-1 justify-items-center">
+                            <img src='/opt/opt2.png' />
+                            <h3 className="text-center mt-2 font-medium text-xs lg:text-base">TV Repair</h3>
+                        </div>
+                        <div className="grid grid-cols-1 justify-items-center">
+                            <img src='/opt/opt4.png' />
+                            <h3 className="text-center mt-2 font-medium text-xs lg:text-base">W. Machine</h3>
+                        </div>
+                        <div className="grid grid-cols-1 justify-items-center">
+                            <img src='/opt/opt3.png' />
+                            <h3 className="text-center mt-2 font-medium text-xs lg:text-base">Geyser</h3>
+                        </div>
 
-                        <img src='/opt/opt1.png' />
-                        <img src='/opt/opt1.png' />
-                        <img src='/opt/opt1.png' />
-                        <img src='/opt/opt1.png' />
-                        <img src='/opt/opt1.png' />
-                        <img src='/opt/opt1.png' />
-                        <img src='/opt/opt1.png' />
-                        <img src='/opt/opt1.png' />
+                        <div className="grid grid-cols-1 justify-items-center">
+                            <img src='/opt/opt1.png' />
+                            <h3 className="text-center mt-2 font-medium text-xs lg:text-base">AC Repair</h3>
+                        </div>
+                        <div className="grid grid-cols-1 justify-items-center">
+                            <img src='/opt/opt2.png' />
+                            <h3 className="text-center mt-2 font-medium text-xs lg:text-base">TV Repair</h3>
+                        </div>
+                        <div className="grid grid-cols-1 justify-items-center">
+                            <img src='/opt/opt4.png' />
+                            <h3 className="text-center mt-2 font-medium text-xs lg:text-base">W. Machine</h3>
+                        </div>
+                        <div className="grid grid-cols-1 justify-items-center">
+                            <img src='/opt/opt3.png' />
+                            <h3 className="text-center mt-2 font-medium text-xs lg:text-base">Geyser</h3>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-2 gap-8 px-4">
+                        <img src='/opt/trend1.png' />
+                        <img src='/opt/trend2.png' />
                     </div>
                 </div>
             </div>
 
-            <div className="relative rounded-xl mx-auto max-w-7xl ">
 
-                <div className="relative w-full flex gap-2 snap-x snap-mandatory no-scrollbar overflow-x-auto mb-6 md:pb-14 mt-8 select-none">
-
-                    <div className="snap-center shrink-0 first:pl-4 last:pr-2">
-
-                        <div className="group">
-                            <div className="relative overflow-hidden">
-                                <Link href='/service/ac-service-centre-in-supaul'>
-                                    <img
-                                        src="/ac-repair.png"
-                                        alt="art cover"
-                                        loading="lazy"
-                                        width={1000}
-                                        height={667}
-                                        className="shrink-0 w-60 h-32 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
-                                    />
-                                </Link>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div className="snap-center shrink-0 first:pl-2 last:pr-0">
-                        <div className="group">
-                            <div className="relative overflow-hidden">
-                                <Link href='/service/ac-service-centre-in-supaul'>
-                                    <img
-                                        src="/air-purifier.png"
-                                        alt="art cover"
-                                        loading="lazy"
-                                        width={1000}
-                                        height={667}
-                                        className="shrink-0 w-60 h-32 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
-                                    />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="snap-center shrink-0 first:pl-2 last:pr-0">
-                        <div className="group">
-                            <div className="relative overflow-hidden">
-                                <Link href='/service/ac-service-centre-in-supaul'>
-                                    <img
-                                        src="/tv-repair.png"
-                                        alt="art cover"
-                                        loading="lazy"
-                                        width={1000}
-                                        height={667}
-                                        className="shrink-0 w-60 h-32 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
-                                    />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="snap-center shrink-0 first:pl-2 last:pr-0">
-                        <div className="group">
-                            <div className="relative overflow-hidden">
-                                <Link href='/service/ac-service-centre-in-supaul'>
-                                    <img
-                                        src="/ro-repair.png"
-                                        alt="art cover"
-                                        loading="lazy"
-                                        width={1000}
-                                        height={667}
-                                        className="shrink-0 w-60 h-32 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
-                                    />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="snap-center shrink-0 first:pl-2 last:pr-0">
-                        <div className="group">
-                            <div className="relative overflow-hidden">
-                                <Link href='/service/ac-service-centre-in-supaul'>
-                                    <img
-                                        src="/geyser-repair.png"
-                                        alt="art cover"
-                                        loading="lazy"
-                                        width={1000}
-                                        height={667}
-                                        className="shrink-0 w-60 h-32 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
-                                    />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="snap-center shrink-0 first:pl-2 last:pr-0">
-                        <div className="group">
-                            <div className="relative overflow-hidden">
-                                <Link href='/service/ac-service-centre-in-supaul'>
-                                    <img
-                                        src="/washing-machine1.png"
-                                        alt="art cover"
-                                        loading="lazy"
-                                        width={1000}
-                                        height={667}
-                                        className="shrink-0 w-60 h-32 rounded-lg shadow-xl object-cover object-top transition duration-500 group-hover:scale-105"
-                                    />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div className="bg-blue-700 py-16 font-[Poppins] px-6">
+            <div className="bg-blue-700 py-16 mt-6 font-[Poppins] px-6">
 
                 <div className="mx-auto max-w-7xl grid grid-cols-6 gap-4">
 
