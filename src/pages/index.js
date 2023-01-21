@@ -48,6 +48,7 @@ export default function Home({ blogs }) {
       </Head>
       <Hero />
       <Step />
+
       <Blog blogs={blogs} />
       <Brands />
     </div>

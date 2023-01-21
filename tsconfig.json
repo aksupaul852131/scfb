@@ -33,7 +33,8 @@
     "src/pages/index.js",
     "src/components/blog.js",
     "src/pages/blog/[slug].js",
-    "src/pages/order.js"
+    "src/pages/order.js",
+    "src/components/counter.tsx"
   ],
   "exclude": [
     "node_modules"

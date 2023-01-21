@@ -21,9 +21,9 @@ function Blog({ blogs }) {
         <div className="bg-[#fffdfd]">
 
             <section className="">
-                <div className="container max-w-7xl px-4 py-12 md:py-24 mx-auto">
+                <div className="container max-w-7xl px-4 py-12 md:py-8 mb-12 mx-auto">
                     <div className="grid md:grid-cols-4 grid-cols-2 gap-2">
-                        <div className="p-4 border rounded-lg grid content-center justify-items-center">
+                        <div className="p-4 border border-2 rounded-lg grid content-center justify-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 mb-2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                             </svg>
@@ -37,7 +37,7 @@ function Blog({ blogs }) {
                                 </ScrollTrigger>
                             </h3>
                         </div>
-                        <div className="p-4 border rounded-lg grid content-center justify-items-center">
+                        <div className="p-4 border border-2 rounded-lg grid content-center justify-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 mb-2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                             </svg>
@@ -51,7 +51,7 @@ function Blog({ blogs }) {
                                 </ScrollTrigger>
                             </h3>
                         </div>
-                        <div className="p-4 border rounded-lg grid content-center justify-items-center">
+                        <div className="p-4 border border-2 rounded-lg grid content-center justify-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 mb-2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                             </svg>
@@ -65,7 +65,7 @@ function Blog({ blogs }) {
                                 </ScrollTrigger>
                             </h3>
                         </div>
-                        <div className="p-4 border rounded-lg grid content-center justify-items-center">
+                        <div className="p-4 border border-2 rounded-lg grid content-center justify-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 mb-2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                             </svg>
@@ -85,84 +85,68 @@ function Blog({ blogs }) {
 
             {/* /app */}
 
-            <div className="bg-[#ffffff]">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 pb-24 font-['Poppins']
-                ">
-                    <div className="lg:bg-gray-50 dark:lg:bg-darker lg:p-16 rounded-[4rem] space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center">
-                        <div className="md:5/12 lg:w-1/2">
-                            <img
-                                src="app_sc.png"
-                                alt="image"
-                                loading="lazy"
-                                width=""
-                                height=""
+
+            <div className="bg-gray-100 font-[Poppins]">
+                <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                    <div className="absolute inset-x-0 top-0 items-center justify-center overflow-hidden flex inset-y-0">
+                        <svg
+                            viewBox="0 0 88 88"
+                            className="w-full max-w-screen-xl text-indigo-300"
+                        >
+                            <circle fill="currentColor" cx="44" cy="44" r="15.5" />
+                            <circle
+                                fillOpacity="0.2"
+                                fill="currentColor"
+                                cx="44"
+                                cy="44"
+                                r="44"
                             />
-                        </div>
-                        <div className="md:7/12 lg:w-1/2">
-                            <h2 className="text-2xl font-bold text-gray-900 md:text-3xl dark:text-white">
-                                Revolutionize Your Home Repair Experience with Smart Care Home Appliance Repair App
-                            </h2>
-                            <p className="my-8 text-gray-600 dark:text-gray-300">
-                                The Smart Care Home Appliance Repair App is your one-stop solution for all your home appliance repair needs. Whether you need a refrigerator repair, efficient, and affordable.
-                                Download the Smart Care Home Appliance Repair App today and experience the convenience of smart home repair service.
-                            </p>
-                            <div className="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
-                                <div className="mt-8 flex gap-4 md:items-center">
-                                    <div className="w-12 h-12 flex gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24"
-                                            fill="currentColor"
-                                            className="w-6 h-6 m-auto text-indigo-500 dark:text-indigo-400"
-                                        >
-                                            <path
-                                                fillRule="evenodd"
-                                                d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
-                                                clipRule="evenodd"
-                                            />
-                                        </svg>
-                                    </div>
-                                    <div className="w-5/6">
-                                        <h4 className="font-semibold text-lg text-gray-700 dark:text-indigo-300">
-                                            Customer Support
-                                        </h4>
-                                        <p className="text-gray-500 dark:text-gray-400">
-                                            We are providing free consulting for your devices
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="pt-4 flex gap-4 md:items-center">
-                                    <div className="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24"
-                                            fill="currentColor"
-                                            className="w-6 h-6 m-auto text-teal-600 dark:text-teal-400"
-                                        >
-                                            <path
-                                                fillRule="evenodd"
-                                                d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
-                                                clipRule="evenodd"
-                                            />
-                                        </svg>
-                                    </div>
-                                    <div className="w-5/6">
-                                        <h4 className="font-semibold text-lg text-gray-700 dark:text-teal-300">
-                                            Anywhere in Supaul
-                                        </h4>
-                                        <p className="text-gray-500 dark:text-gray-400">
-                                            Book our service in all over supaul
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <circle
+                                fillOpacity="0.2"
+                                fill="currentColor"
+                                cx="44"
+                                cy="44"
+                                r="37.5"
+                            />
+                            <circle
+                                fillOpacity="0.3"
+                                fill="currentColor"
+                                cx="44"
+                                cy="44"
+                                r="29.5"
+                            />
+                            <circle
+                                fillOpacity="0.3"
+                                fill="currentColor"
+                                cx="44"
+                                cy="44"
+                                r="22.5"
+                            />
+                        </svg>
+                    </div>
+                    <div className="relative grid content-center justify-items-center grid-cols-1">
+
+
+                        <img
+                            src="app_sc.png"
+                            alt="image"
+                            loading="lazy"
+                            className="w-4/5 md:w-2/6"
+                        />
+                        <h3 className="mt-6 font-bold text-2xl">स्मार्ट केयर सुपौल</h3>
+                        <h2 className="mt-2 text-1xl font-bold text-gray-900 md:text-3xl text-center">
+                            <span className="text-blue-700">SUPAUL</span> NO.1 - Home Service App
+                        </h2>
+
                     </div>
                 </div>
             </div>
 
 
-            <section className="">
+
+
+
+            <section className="bg-white">
                 <div className="container max-w-7xl pb-8 pt-2 px-0 lg:px-4 mx-auto">
                     <h2 className="text-2xl md:text-4xl font-semibold text-center">Blogs & Updates</h2>
                     <div className="pt-8 flex flex-wrap">
