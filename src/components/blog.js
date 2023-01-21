@@ -20,47 +20,64 @@ function Blog({ blogs }) {
 
         <div className="bg-[#fffdfd]">
 
-            <section className="text-white bg-gray-100">
-                <div className="container max-w-7xl px-6 py-12 md:py-24 mx-auto">
+            <section className="">
+                <div className="container max-w-7xl px-2 py-12 md:py-24 mx-auto">
                     <div className="grid md:grid-cols-4 grid-cols-2 gap-2">
-                        <div className="p-4 bg-blue-700 rounded-lg grid content-center justify-center">
-                            <h2 className="title-font font-medium sm:text-4xl text-3xl text-white mb-3">
+                        <div className="p-4 border rounded-lg grid content-center justify-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 mb-2">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                            </svg>
+
+                            <h3 className="title-font font-medium text-lg text-black mb-3">
                                 <ScrollTrigger onEnter={() => setcounter(true)}>
                                     {counter && <CountUp
                                         start={0}
                                         end={900}
-                                        duration={2.75} />} +
+                                        duration={2.75} />}+ Customers
                                 </ScrollTrigger>
+                            </h3>
+                        </div>
+                        <div className="p-4 border rounded-lg grid content-center justify-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 mb-2">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                            </svg>
 
-                            </h2>
-                            <p className="leading-relaxed">Customers</p>
+                            <h3 className="title-font font-medium text-lg text-black mb-3">
+                                <ScrollTrigger onEnter={() => setcounter(true)}>
+                                    {counter && <CountUp
+                                        start={0}
+                                        end={26}
+                                        duration={2.75} />} Teams Supaul
+                                </ScrollTrigger>
+                            </h3>
                         </div>
-                        <div className="p-4 bg-blue-700 rounded-lg grid content-center justify-center">
-                            <h2 className="title-font font-medium sm:text-4xl text-3xl text-white mb-3">
-                                {counter && <CountUp
-                                    start={0}
-                                    end={9}
-                                    duration={3.75} />} +
-                            </h2>
-                            <p className="leading-relaxed">Services</p>
+                        <div className="p-4 border rounded-lg grid content-center justify-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 mb-2">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                            </svg>
+
+                            <h3 className="title-font font-medium text-lg text-black mb-3">
+                                <ScrollTrigger onEnter={() => setcounter(true)}>
+                                    {counter && <CountUp
+                                        start={0}
+                                        end={30}
+                                        duration={2.75} />}+ Services
+                                </ScrollTrigger>
+                            </h3>
                         </div>
-                        <div className="p-4 bg-blue-700 rounded-lg grid content-center justify-center">
-                            <h2 className="title-font font-medium sm:text-4xl text-3xl text-white mb-3">
-                                {counter && <CountUp
-                                    start={0}
-                                    end={18}
-                                    duration={2.75} />} +
-                            </h2>
-                            <p className="leading-relaxed">Technicians</p>
-                        </div>
-                        <div className="p-4 bg-blue-700 rounded-lg grid content-center justify-center">
-                            <h2 className="title-font font-medium sm:text-4xl text-3xl text-white mb-3">
-                                {counter && <CountUp
-                                    start={0}
-                                    end={32}
-                                    duration={4.75} />} +
-                            </h2>
-                            <p className="leading-relaxed">Partners</p>
+                        <div className="p-4 border rounded-lg grid content-center justify-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 mb-2">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                            </svg>
+
+                            <h3 className="title-font font-medium text-lg text-black mb-3">
+                                <ScrollTrigger onEnter={() => setcounter(true)}>
+                                    {counter && <CountUp
+                                        start={0}
+                                        end={11}
+                                        duration={2.75} />}+ Brand Partners
+                                </ScrollTrigger>
+                            </h3>
                         </div>
                     </div>
                 </div>

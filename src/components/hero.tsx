@@ -8,7 +8,7 @@ const Hero = () => {
             <div className=''>
                 <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pt-32 pb-8 font-['Poppins'] grid grid-cols-1 lg:grid-cols-2 gap-8">
 
-                    <div className="grid grid-cols-4 gap-8 px-4">
+                    <div className="grid grid-cols-4 gap-8">
                         <div className="grid grid-cols-1 justify-items-center">
                             <img src='/opt/opt1.png' />
                             <h3 className="text-center mt-2 font-medium text-xs lg:text-base">AC Repair</h3>
@@ -43,7 +43,7 @@ const Hero = () => {
                             <h3 className="text-center mt-2 font-medium text-xs lg:text-base">Geyser</h3>
                         </div>
                     </div>
-                    <div className="grid grid-cols-2 gap-8 px-4">
+                    <div className="grid grid-cols-2 gap-6">
                         <img src='/opt/trend1.png' />
                         <img src='/opt/trend2.png' />
                     </div>
@@ -51,7 +51,7 @@ const Hero = () => {
             </div>
 
 
-            <div className="bg-blue-700 py-16 mt-6 font-[Poppins] px-6">
+            <div className="bg-blue-700 py-16 mt-6 font-[Poppins] px-2">
 
                 <div className="mx-auto max-w-7xl grid grid-cols-6 gap-4">
 
