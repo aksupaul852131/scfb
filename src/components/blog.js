@@ -21,7 +21,7 @@ function Blog({ blogs }) {
         <div className="bg-[#fffdfd]">
 
             <section className="">
-                <div className="container max-w-7xl px-2 py-12 md:py-24 mx-auto">
+                <div className="container max-w-7xl px-4 py-12 md:py-24 mx-auto">
                     <div className="grid md:grid-cols-4 grid-cols-2 gap-2">
                         <div className="p-4 border rounded-lg grid content-center justify-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 mb-2">
@@ -82,97 +82,6 @@ function Blog({ blogs }) {
                     </div>
                 </div>
             </section>
-            {/* steps */}
-            <section className="body-font">
-                <h2 className="text-2xl md:text-4xl mt-12 font-semibold text-center">Simple Steps</h2>
-                <div className="container max-w-7xl px-5 py-16 mx-auto flex flex-wrap">
-
-
-                    <div className="flex flex-wrap w-full">
-                        <div className="">
-                            <div className="flex relative pb-12">
-                                <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                    <div className="h-full w-1 bg-gray-200 pointer-events-none" />
-                                </div>
-                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-700 inline-flex items-center justify-center text-white relative z-10">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 ">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                                    </svg>
-
-                                </div>
-                                <div className="flex-grow pl-4">
-                                    <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                                        STEP 1
-                                    </h2>
-                                    <p className="leading-relaxed">
-                                        Book Our Service Using Our Official Website, App & You Can Call Directly
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex relative pb-12">
-                                <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                    <div className="h-full w-1 bg-gray-200 pointer-events-none" />
-                                </div>
-                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-700 inline-flex items-center justify-center text-white relative z-10">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 animate-bounce ">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                                    </svg>
-                                </div>
-                                <div className="flex-grow pl-4">
-                                    <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                                        STEP 2
-                                    </h2>
-                                    <p className="leading-relaxed">
-                                        Our Customer Care Excutive Call On Your Provided Number And Confirm Your Service Request.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex relative pb-12">
-                                <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                    <div className="h-full w-1 bg-gray-200 pointer-events-none" />
-                                </div>
-                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-700 inline-flex items-center justify-center text-white relative z-10">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
-                                    </svg>
-
-                                </div>
-                                <div className="flex-grow pl-4">
-                                    <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                                        STEP 3
-                                    </h2>
-                                    <p className="leading-relaxed">
-                                        Our Technician Visit On your Provided Address And Resolve Your Issue.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex relative pb-12">
-                                <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-
-                                </div>
-                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-700 inline-flex items-center justify-center text-white relative z-10">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
-                                    </svg>
-
-                                </div>
-                                <div className="flex-grow pl-4">
-                                    <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                                        STEP 4
-                                    </h2>
-                                    <p className="leading-relaxed">
-                                        After Repair You Pay By Invoice Ammount - Genrtated By SmartCare
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </section>
-
 
             {/* /app */}
 

@@ -6,7 +6,7 @@ const Hero = () => {
         <>
 
             <div className=''>
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-32 pb-8 font-['Poppins'] grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-8 font-['Poppins'] grid grid-cols-1 lg:grid-cols-2 gap-8">
 
                     <div className="grid grid-cols-2 gap-4">
                         <div className="grid grid-cols-1 justify-items-center">

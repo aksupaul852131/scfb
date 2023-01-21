@@ -3,6 +3,7 @@ import Blog from "@/components/blog";
 import Brands from "@/components/brands";
 import Head from "next/head";
 import client from '../../client'
+import { Step } from "@/components/steps";
 
 export default function Home({ blogs }) {
 
@@ -46,6 +47,7 @@ export default function Home({ blogs }) {
 
       </Head>
       <Hero />
+      <Step />
       <Blog blogs={blogs} />
       <Brands />
     </div>
