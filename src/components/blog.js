@@ -72,7 +72,7 @@ function Blog({ blogs }) {
 
 
                     <div className="flex flex-wrap w-full">
-                        <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+                        <div className="">
                             <div className="flex relative pb-12">
                                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                                     <div className="h-full w-1 bg-gray-200 pointer-events-none" />
@@ -151,11 +151,6 @@ function Blog({ blogs }) {
 
                         </div>
 
-                        <div className="hidden lg:block bg-blue-700 bg-cover bg-[url(https://us.123rf.com/450wm/mar1ar1/mar1ar11810/mar1ar1181000342/mar1ar1181000342.jpg?ver=6)] rounded-lg lg:w-3/5 md:w-full object-cover object-center md:mt-0 mt-12 grid content-center justify-items-center p-12">
-                            <h3 className="text-lg text-white">Smart Care Supaul</h3>
-                            <h3 className="text-lg md:text-4xl font-bold text-white">Simple Steps</h3>
-                            <p className="text-white mt-4 text-xs lg:txt-base">Customer Helpline Number - 8825105519</p>
-                        </div>
 
                     </div>
                 </div>

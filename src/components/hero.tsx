@@ -6,28 +6,24 @@ const Hero = () => {
         <>
 
             <div className=''>
-                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pt-32 pb-8 font-['Poppins']">
+                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pt-32 pb-8 font-['Poppins'] grid grid-cols-1">
 
-                    <div className=''>
-                        <h2 className='text-2xl md:text-4xl font-bold text-center'>What we can fix for you</h2>
-                        <div className='flex justify-center'>
-                            <div className='bg-white shadow-lg border py-4 px-8 rounded-full w-full md:w-4/5 m-4 md:mt-10 mx-2 flex'>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 stroke-black">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                                </svg>
-                                <input
-
-                                    type="text"
-                                    placeholder="Search"
-                                    className="outline-none px-2 bg-white text-white ml-6 w-full"
-                                />
-                            </div>
+                    <div className="grid grid-cols-4 gap-8 px-4">
+                        <div className="grid grid-cols-1 justify-items-center">
+                            <img src='/opt/opt1.png' />
+                            <h3 className="text-center mt-2 font-medium text-xs lg:text-base">AC Repair</h3>
                         </div>
-                        <p className='text-xs md:text-base font-medium text-center'><u><Link href="/page/supaul"> Supaul</Link></u> popular: <Link href='/page/ac-repair-supaul' className='text-white bg-black px-3 rounded-full ml-4'>AC Repair</Link> <Link href='/page/fridge-repair-supaul' className='text-white bg-black px-3 rounded-full ml-2'>Fridge</Link> </p>
+
+                        <img src='/opt/opt1.png' />
+                        <img src='/opt/opt1.png' />
+                        <img src='/opt/opt1.png' />
+                        <img src='/opt/opt1.png' />
+                        <img src='/opt/opt1.png' />
+                        <img src='/opt/opt1.png' />
+                        <img src='/opt/opt1.png' />
+                        <img src='/opt/opt1.png' />
                     </div>
-
                 </div>
-
             </div>
 
             <div className="relative rounded-xl mx-auto max-w-7xl ">
@@ -141,6 +137,68 @@ const Hero = () => {
                     </div>
 
                 </div>
+            </div>
+            <div className="bg-blue-700 py-16 font-[Poppins] px-6">
+
+                <div className="mx-auto max-w-7xl grid grid-cols-6 gap-4">
+
+                    <div className="bg-white w-full rounded-lg col-span-3 py-4 px-2">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 content-center h-full">
+                            <div className="grid justify-items-center">
+                                <img src='/customer-care-smartcare.webp' className="w-48" />
+                            </div>
+                            <div className="md:mr-6 sm:mt-3 grid content-center pl-2">
+                                <h3 className="text-xs mb-2 md:text-lg font-semibold ">Customer Support </h3>
+                                <div className="flex items-center hover:text-blue-700">
+                                    <p className="text-xs text-gray-700 mr-2 hover:text-blue-700 select-none">Inquary Now</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="bg-white w-full h-full rounded-lg col-span-3 row-span-1 md:row-span-2 py-4 px-2">
+                        <div className="grid grid-cols-1 gap-2 content-center h-full">
+                            <div className="grid justify-items-center">
+                                <img src='/electrician-supaul.webp' className="w-48" />
+                            </div>
+                            <div className="md:mr-6 sm:mt-3 grid content-center pl-2">
+                                <div className="flex mb-2 ">
+                                    <h3 className="text-xs md:text-lg font-semibold ">Electrician Supaul</h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="ml-1 w-3 md:w-5">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                </div>
+
+                                <p className="text-xs text-gray-700 mr-2 hover:text-blue-700 select-none">We Have Professional & Trained Electricians.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="bg-white w-full h-44 rounded-lg col-span-6 md:col-span-3 py-4 px-2">
+                        <div className="grid grid-cols-2 gap-2 content-center h-full">
+                            <div className="grid justify-items-center">
+                                <img src='/home-repairs.webp' className="w-48" />
+                            </div>
+                            <div className="md:mr-6 sm:mt-3 grid content-center pl-2">
+                                <div className="flex mb-2">
+                                    <h3 className="text-xs md:text-lg font-semibold">Home Repair </h3>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="ml-1 w-3 md:w-5">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                </div>
+
+                                <p className="text-xs text-gray-700 mr-2 hover:text-blue-700 select-none">Complete Solution Of Home Appliances & Repair Installtion Services</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </>
