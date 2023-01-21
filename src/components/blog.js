@@ -100,6 +100,7 @@ function Blog({ blogs }) {
                                 cx="44"
                                 cy="44"
                                 r="44"
+                                className="animate-pulse"
                             />
                             <circle
                                 fillOpacity="0.2"
@@ -107,6 +108,7 @@ function Blog({ blogs }) {
                                 cx="44"
                                 cy="44"
                                 r="37.5"
+                                className="animate-pulse"
                             />
                             <circle
                                 fillOpacity="0.3"
@@ -114,6 +116,7 @@ function Blog({ blogs }) {
                                 cx="44"
                                 cy="44"
                                 r="29.5"
+                                className="animate-pulse"
                             />
                             <circle
                                 fillOpacity="0.3"
@@ -121,6 +124,7 @@ function Blog({ blogs }) {
                                 cx="44"
                                 cy="44"
                                 r="22.5"
+                                className="animate-pulse"
                             />
                         </svg>
                     </div>
@@ -147,7 +151,7 @@ function Blog({ blogs }) {
 
 
             <section className="bg-white">
-                <div className="container max-w-7xl pb-8 pt-2 px-0 lg:px-4 mx-auto">
+                <div className="container max-w-7xl pb-8 pt-6 px-0 lg:px-4 mx-auto">
                     <h2 className="text-2xl md:text-4xl font-semibold text-center">Blogs & Updates</h2>
                     <div className="pt-8 flex flex-wrap">
                         {!blogs.length > 0 && <p>No Blogs Post</p>}
