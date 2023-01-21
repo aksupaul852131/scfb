@@ -20,10 +20,10 @@ function Blog({ blogs }) {
 
         <div className="bg-[#fffdfd]">
 
-            <section className="">
-                <div className="container max-w-7xl px-4 py-12 md:py-8 mb-12 mx-auto">
+            <section className="bg-yellow-200">
+                <div className="container max-w-7xl px-4 py-12 md:py-12 mb-12 mx-auto">
                     <div className="grid md:grid-cols-4 grid-cols-2 gap-2">
-                        <div className="p-4 border border-2 rounded-lg grid content-center justify-items-center">
+                        <div className="p-6 bg-white border-2 rounded-lg grid content-center justify-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 mb-2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                             </svg>
@@ -37,7 +37,7 @@ function Blog({ blogs }) {
                                 </ScrollTrigger>
                             </h3>
                         </div>
-                        <div className="p-4 border border-2 rounded-lg grid content-center justify-items-center">
+                        <div className="p-6 bg-white border-2 rounded-lg grid content-center justify-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 mb-2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                             </svg>
@@ -51,7 +51,7 @@ function Blog({ blogs }) {
                                 </ScrollTrigger>
                             </h3>
                         </div>
-                        <div className="p-4 border border-2 rounded-lg grid content-center justify-items-center">
+                        <div className="p-6 bg-white border-2 rounded-lg grid content-center justify-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 mb-2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                             </svg>
@@ -65,7 +65,7 @@ function Blog({ blogs }) {
                                 </ScrollTrigger>
                             </h3>
                         </div>
-                        <div className="p-4 border border-2 rounded-lg grid content-center justify-items-center">
+                        <div className="p-6 bg-white border-2 rounded-lg grid content-center justify-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 mb-2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                             </svg>
@@ -91,7 +91,7 @@ function Blog({ blogs }) {
                     <div className="absolute inset-x-0 top-0 items-center justify-center overflow-hidden flex inset-y-0">
                         <svg
                             viewBox="0 0 88 88"
-                            className="w-full max-w-screen-xl text-indigo-300"
+                            className="w-full animate-pulse max-w-screen-xl text-indigo-300"
                         >
                             <circle fill="currentColor" cx="44" cy="44" r="15.5" />
                             <circle
@@ -151,7 +151,7 @@ function Blog({ blogs }) {
 
 
             <section className="bg-white">
-                <div className="container max-w-7xl pb-8 pt-6 px-0 lg:px-4 mx-auto">
+                <div className="container max-w-7xl pb-8 pt-8 px-0 lg:px-4 mx-auto">
                     <h2 className="text-2xl md:text-4xl font-semibold text-center">Blogs & Updates</h2>
                     <div className="pt-8 flex flex-wrap">
                         {!blogs.length > 0 && <p>No Blogs Post</p>}

@@ -153,7 +153,7 @@ const Service = ({ service }) => {
                                         </center>
 
                                         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 my-8 max-w-2xl mx-auto'>
-                                            <Link href={{ pathname: '/order', query: { sname: service.title, simg: `${urlFor(service.mainImage).width(800).fit('max').auto('format')}` } }}
+                                            <Link href={{ pathname: '/order', query: { sname: service.title, simg: `${urlFor(service.mainImage).width(800).fit('max').auto('format')}`, cname: '' } }}
                                                 className='bg-blue-700 rounded-full py-4 flex justify-center'>
 
                                                 <div className='flex'>

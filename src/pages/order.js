@@ -7,7 +7,7 @@ export default function Order() {
     const router = useRouter();
 
     const [inputs, setInputs] = useState({
-        name: '',
+        name: `${router.query.cname}`,
         mobile: '',
         date: '',
         time: '',
