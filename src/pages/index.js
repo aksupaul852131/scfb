@@ -30,6 +30,7 @@ export default function Home({ blogs }) {
 
         <link rel="canonical" href='http://smartcaresupaul.in' />
         <meta name="google-site-verification" content="ZInZzH3oqHUCrkz_tEbsHH1zGv1G4DtrTpJp_YseZ0Y" />
+        <meta name="facebook-domain-verification" content="5t3djr0q97d10k26uabhh7jdifzi95" />
 
         {/* OG  */}
         <meta property="og:url" content="http://smartcaresupaul.in" />
