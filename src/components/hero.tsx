@@ -268,17 +268,29 @@ const Hero = () => {
                     <div className="relative rounded-xl mt-4 overflow-auto p-4 lg:mx-auto lg:max-w-7xl no-scrollbar">
                         <div className="flex flex-nowrap md:justify-center gap-4 md:gap-8 lg:gap-12 pb-4">
                             <div className="w-24 lg:w-32 flex-none last:pr-8">
-                                <img src='/opt/opt1.png' />
+                                <Link href='/service/ac-service-centre-in-supaul'>
+                                    <img src='/opt/opt1.png' />
+                                </Link>
+
                             </div>
                             <div className="w-24 lg:w-32 flex-none last:pr-8">
+                                <Link href='/service/'>
+
+                                </Link>
                                 <img src='/opt/opt2.png' />
                             </div>
 
                             <div className="w-24 lg:w-32 flex-none last:pr-8">
+                                <Link href='/service/'>
+
+                                </Link>
                                 <img src='/opt/opt4.png' />
                             </div>
 
                             <div className="w-24 lg:w-32 flex-none last:pr-8">
+                                <Link href='/service/'>
+
+                                </Link>
                                 <img src='/opt/opt2.png' />
                             </div>
                             <div className="w-24 lg:w-32 flex-none last:pr-8">
