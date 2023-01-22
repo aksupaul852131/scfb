@@ -176,7 +176,7 @@ const Hero = () => {
 
                                         <div className="mt-4 mb-2 sm:mb-4">
                                             <Link
-                                                href={{ pathname: '/order', query: { sname: selected.name, simg: '', cname: name } }}
+                                                href={{ pathname: '/order', query: { sname: selected.name, simg: 'https://img.freepik.com/free-vector/smiling-man-helping-woman-with-household_74855-7860.jpg?w=1380&t=st=1674370090~exp=1674370690~hmac=57e3e5a43f01277de6cf6d387a1e38bc56f20cabc948ab57c35789cf88970207', cname: name } }}
 
                                                 className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-700 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                                             >
@@ -205,16 +205,17 @@ const Hero = () => {
                             <div className="grid justify-items-center">
                                 <img src='/customer-care-smartcare.webp' className="w-48" />
                             </div>
-                            <div className="md:mr-6 sm:mt-3 grid content-center pl-2">
-                                <h3 className="text-xs mb-2 md:text-lg font-semibold ">Customer Support </h3>
-                                <div className="flex items-center hover:text-blue-700">
-                                    <p className="text-xs text-gray-700 mr-2 hover:text-blue-700 select-none">Inquary Now</p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                                    </svg>
+                            <Link href='/page/customer-support'>
+                                <div className="md:mr-6 sm:mt-3 grid content-center pl-2">
+                                    <h3 className="text-xs mb-2 md:text-lg font-semibold ">Customer Support </h3>
+                                    <div className="flex items-center hover:text-blue-700 mb-5">
+                                        <p className="text-xs text-gray-700 mr-2 hover:text-blue-700 select-none">Inquary Now</p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                        </svg>
+                                    </div>
                                 </div>
-
-                            </div>
+                            </Link>
                         </div>
 
                     </div>
@@ -230,9 +231,7 @@ const Hero = () => {
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                     </svg>
                                 </div>
-
                                 <p className="text-xs text-gray-700 mr-2 hover:text-blue-700 select-none">We Have Professional & Trained Electricians.</p>
-
                             </div>
                         </div>
                     </div>
@@ -269,36 +268,37 @@ const Hero = () => {
                         <div className="flex flex-nowrap md:justify-center gap-4 md:gap-8 lg:gap-12 pb-4">
                             <div className="w-24 lg:w-32 flex-none last:pr-8">
                                 <Link href='/service/ac-service-centre-in-supaul'>
-                                    <img src='/opt/opt1.png' />
+                                    <img src='/opt/opt1.png' alt='AC Repair - Smart Care' />
                                 </Link>
 
                             </div>
                             <div className="w-24 lg:w-32 flex-none last:pr-8">
-                                <Link href='/service/'>
-
+                                <Link href='/service/fridge-repair-service-in-supaul'>
+                                    <img src='/opt/opt5.png' alt='Fridge Repair - Smart Care' />
                                 </Link>
-                                <img src='/opt/opt2.png' />
                             </div>
 
                             <div className="w-24 lg:w-32 flex-none last:pr-8">
-                                <Link href='/service/'>
-
+                                <Link href='/service/washing-machine-repair-in-supaul'>
+                                    <img src='/opt/opt4.png' alt='Washing Machine Repair - Smart Care' />
                                 </Link>
-                                <img src='/opt/opt4.png' />
                             </div>
 
                             <div className="w-24 lg:w-32 flex-none last:pr-8">
-                                <Link href='/service/'>
-
+                                <Link href='/service/led-tv-repair-in-supaul'>
+                                    <img src='/opt/opt2.png' alt='TV Repair - Smart Care' />
                                 </Link>
-                                <img src='/opt/opt2.png' />
                             </div>
                             <div className="w-24 lg:w-32 flex-none last:pr-8">
-                                <img src='/opt/opt2.png' />
+                                <Link href='/service/ro-repair-service-center-in-supaul'>
+                                    <img src='/opt/opt6.png' alt='RO Repair - Smart Care' />
+                                </Link>
                             </div>
 
                             <div className="w-24 lg:w-32 h-24 lg:h-32 flex-none">
-                                <img src='/opt/opt3.png' />
+                                <Link href='/service/geyser-repair-in-supaul'>
+                                    <img src='/opt/opt3.png' alt='Geyser Repair - Smart Care' />
+                                </Link>
                             </div>
                         </div>
                     </div>

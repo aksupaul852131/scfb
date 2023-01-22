@@ -98,7 +98,7 @@ export default function Order() {
                     </div>
                 </div>
 
-                <div className="flex items-center justify-center p-2 md:p-8">
+                <div className="my-6 flex items-center justify-center p-2 md:p-8">
                     <div className="mx-auto w-full max-w-[550px]">
                         <form onSubmit={(e) => onSubmitForm(e)}>
                             <div className="-mx-3 flex flex-wrap">
@@ -220,7 +220,7 @@ export default function Order() {
                                 ) : form.state === 'error' ? (
                                     <div>{form.message}</div>
                                 ) : (
-                                    form.state === 'success' && <p className='text-center'>Order Confirmed</p>
+                                    form.state === 'success' && <p className='text-center'>Order Confirmed. We are contacting you under 300 mits</p>
                                 )}
                         </form>
                     </div>

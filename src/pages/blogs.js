@@ -29,7 +29,7 @@ const Blogs = ({ blogs }) => {
             {/* ====== Blog Section Start */}
 
             <section className="text-gray-600 body-font">
-                <div className="container max-w-7xl pt-24 pb-8 px-4 mx-auto">
+                <div className="container max-w-7xl pt-24 pb-8 px-3 mx-auto">
                     <h2 className="text-center text-2xl font-semibold mb-12 text-black">
                         Blogs & Updates
 
@@ -40,7 +40,7 @@ const Blogs = ({ blogs }) => {
 
                             blogs.map((b) => (
 
-                                <div key={b._id} className="p-4 md:w-1/3">
+                                <div key={b._id} className="md:w-1/3">
                                     <div className="h-full border-2 bg-white border-gray-200 border-opacity-60 rounded-2xl overflow-hidden">
                                         <img
                                             className="lg:h-48 md:h-36 w-full object-cover object-center"
