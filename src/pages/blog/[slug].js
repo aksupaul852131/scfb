@@ -34,7 +34,7 @@ const Slug = ({ post, relatedPosts }) => {
         "@type": "BlogPosting",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": `http://smartcaresupaul.in/post/${post.slug.current}`
+            "@id": `http://smartcaresupaul.in/blog/${post.slug.current}`
         },
         "headline": post.title,
         "description": post.metadesc,
@@ -60,22 +60,21 @@ const Slug = ({ post, relatedPosts }) => {
         <div>
             <Head>
                 <title>{`${post.title} | Smart Care`}</title>
+                <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
                 <meta name="description" content={post.metadesc} />
                 <meta name='subject' content='Blog - Smart Care' />
 
-                <link rel="canonical" href={`http://smartcaresupaul.in/post/${post.slug.current}`} />
+                <link rel="canonical" href={`http://smartcaresupaul.in/blog/${post.slug.current}`} />
                 <meta property="fb:app_id" content="1208723013361131" />
                 <meta name="theme-color" content="#1D4ED8" />
 
                 <meta property="og:site_name" content="Smart Care" />
                 <meta property="og:type" content="website" />
 
-                <meta property="og:url" content={`http://smartcaresupaul.in/post/${post.slug.current}`} />
+                <meta property="og:url" content={`http://smartcaresupaul.in/blog/${post.slug.current}`} />
                 <meta property="og:title" content={`${post.title} | Smart Care`} key="title" />
                 <meta property="og:description" content={post.metadesc} key="description" />
-                <meta property="og:image" content={`${urlFor(post.mainImage).width(600).fit('max').auto('format')}`} />
-                <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
-
+                <meta property="og:image" content={`${urlFor(post.mainImage).width(800).fit('max').auto('format')}`} />
 
                 {/* schema */}
                 <script
