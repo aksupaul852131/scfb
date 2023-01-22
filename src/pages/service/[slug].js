@@ -122,7 +122,7 @@ const Service = ({ service }) => {
                 <meta name="theme-color" content="#1D4ED8" />
 
                 <meta property="og:site_name" content="Smart Care" />
-                <meta property="og:type" content="service" />
+                <meta property="og:type" content="website" />
                 <meta property="og:title" content={`${service.title} | Smart Care`} key="title" />
                 <meta property="og:description" content={service.metadesc} key="description" />
                 <meta property="og:image" content={`${urlFor(service.mainImage).width(800).fit('max').auto('format')}`} />
