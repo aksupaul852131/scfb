@@ -265,8 +265,8 @@ const Hero = () => {
                 <h2 className="text-center text-2xl font-semibold mt-10">What We Can Fix For You</h2>
                 <div className="">
 
-                    <div className="relative rounded-xl mt-4 overflow-auto p-4 lg:mx-auto lg:max-w-7xl">
-                        <div className="flex flex-nowrap md:justify-center gap-4 md:gap-8 lg:gap-12">
+                    <div className="relative rounded-xl mt-4 overflow-auto p-4 lg:mx-auto lg:max-w-7xl no-scrollbar">
+                        <div className="flex flex-nowrap md:justify-center gap-4 md:gap-8 lg:gap-12 pb-4">
                             <div className="w-24 lg:w-32 flex-none last:pr-8">
                                 <img src='/opt/opt1.png' />
                             </div>

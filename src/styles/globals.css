@@ -73,5 +73,11 @@
         @apply mt-2;
     }
 
+    .uil-angle-right-b:before {
+        content: '\eb9f';
+    }
 
+    .uil-angle-right-b:before {
+        content: '\eb9f';
+    }
 }
