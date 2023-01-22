@@ -116,9 +116,8 @@ const Service = ({ service }) => {
                 <meta name="description" content={service.metadesc} />
 
                 <link rel="canonical" href={`http://smartcaresupaul.in/service/${service.slug.current}`} />
-
-                <meta property="fb:app_id" content="1208723013361131" />
                 <meta property="og:url" content={`http://smartcaresupaul.in/service/${service.slug.current}`} />
+                <meta property="fb:app_id" content="1208723013361131" />
                 <meta name="theme-color" content="#1D4ED8" />
 
                 <meta property="og:site_name" content="Smart Care" />

@@ -64,6 +64,11 @@ const Slug = ({ post, relatedPosts }) => {
                 <meta name='subject' content='Blog - Smart Care' />
 
                 <link rel="canonical" href={`http://smartcaresupaul.in/post/${post.slug.current}`} />
+                <meta property="fb:app_id" content="1208723013361131" />
+                <meta name="theme-color" content="#1D4ED8" />
+
+                <meta property="og:site_name" content="Smart Care" />
+                <meta property="og:type" content="website" />
 
                 <meta property="og:url" content={`http://smartcaresupaul.in/post/${post.slug.current}`} />
                 <meta property="og:title" content={`${post.title} | Smart Care`} key="title" />
