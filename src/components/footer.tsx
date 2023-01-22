@@ -184,7 +184,7 @@ const Footer = () => {
                                     {/*end col*/}
                                     <div className="lg:col-span-3 md:col-span-4">
                                         <h5 className="tracking-[1px] text-gray-100 font-semibold">
-                                            Offers
+                                            Updates
                                         </h5>
                                         <p className="mt-6">
                                             Subscribe for latest offers and news in supaul
@@ -210,7 +210,7 @@ const Footer = () => {
                                                     type="submit"
                                                     id="submitsubscribe"
                                                     name="send"
-                                                    className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 py-2 hover:border-indigo-700 text-white rounded-md"
+                                                    className="btn mt-2 bg-indigo-600 hover:bg-indigo-700 border-indigo-600 py-2 hover:border-indigo-700 text-white rounded-md"
                                                 >
                                                     Subscribe
                                                 </button>
@@ -236,58 +236,6 @@ const Footer = () => {
 
                                 </p>
                             </div>
-                            <ul className="list-none ltr:md:text-right rtl:md:text-left text-center mt-6 md:mt-0">
-                                <li className="inline">
-                                    <Link href="">
-                                        <img
-                                            src="assets/images/payments/american-ex.png"
-                                            className="max-h-6 inline"
-                                            title="American Express"
-                                            alt=""
-                                        />
-                                    </Link>
-                                </li>
-                                <li className="inline">
-                                    <Link href="">
-                                        <img
-                                            src="assets/images/payments/discover.png"
-                                            className="max-h-6 inline"
-                                            title="Discover"
-                                            alt=""
-                                        />
-                                    </Link>
-                                </li>
-                                <li className="inline">
-                                    <Link href="">
-                                        <img
-                                            src="assets/images/payments/master-card.png"
-                                            className="max-h-6 inline"
-                                            title="Master Card"
-                                            alt=""
-                                        />
-                                    </Link>
-                                </li>
-                                <li className="inline">
-                                    <Link href="">
-                                        <img
-                                            src="assets/images/payments/paypal.png"
-                                            className="max-h-6 inline"
-                                            title="Paypal"
-                                            alt=""
-                                        />
-                                    </Link>
-                                </li>
-                                <li className="inline">
-                                    <Link href="">
-                                        <img
-                                            src="assets/images/payments/visa.png"
-                                            className="max-h-6 inline"
-                                            title="Visa"
-                                            alt=""
-                                        />
-                                    </Link>
-                                </li>
-                            </ul>
                         </div>
                         {/*end grid*/}
                     </div>
