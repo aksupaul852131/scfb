@@ -117,11 +117,13 @@ const Service = ({ service }) => {
 
                 <link rel="canonical" href={`http://smartcaresupaul.in/service/${service.slug.current}`} />
                 <meta property="og:url" content={`http://smartcaresupaul.in/service/${service.slug.current}`} />
+                <meta name="theme-color" content="#1D4ED8" />
 
-
+                <meta property="og:site_name" content="Smart Care" />
+                <meta property="og:type" content="service" />
                 <meta property="og:title" content={`${service.title} | Smart Care`} key="title" />
                 <meta property="og:description" content={service.metadesc} key="description" />
-                <meta property="og:image" content="https://ia.media-imdb.com/imahttps://www.smartcaresupaul.in/app_sc.pngges/rock.jpg" />
+                <meta property="og:image" content={`${urlFor(service.mainImage).width(800).fit('max').auto('format')}`} />
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
                 <meta name='subject' content='Home Appliances Repair In Supaul' />
 

@@ -81,9 +81,9 @@ const Footer = () => {
                                     </div>
                                     {/*end col*/}
                                     <div className="lg:col-span-2 md:col-span-4">
-                                        <h5 className="tracking-[1px] text-gray-100 font-semibold">
+                                        <h3 className="tracking-[1px] text-gray-100 font-semibold">
                                             Company
-                                        </h5>
+                                        </h3>
                                         <ul className="list-none mt-6">
                                             <li>
                                                 <Link
@@ -138,9 +138,9 @@ const Footer = () => {
                                     </div>
                                     {/*end col*/}
                                     <div className="lg:col-span-3 md:col-span-4">
-                                        <h5 className="tracking-[1px] text-gray-100 font-semibold">
+                                        <h3 className="tracking-[1px] text-gray-100 font-semibold">
                                             Usefull Links
-                                        </h5>
+                                        </h3>
                                         <ul className="list-none footer-list mt-6">
                                             <li>
                                                 <Link
@@ -183,9 +183,9 @@ const Footer = () => {
                                     </div>
                                     {/*end col*/}
                                     <div className="lg:col-span-3 md:col-span-4">
-                                        <h5 className="tracking-[1px] text-gray-100 font-semibold">
+                                        <h3 className="tracking-[1px] text-gray-100 font-semibold">
                                             Updates
-                                        </h5>
+                                        </h3>
                                         <p className="mt-6">
                                             Subscribe for latest offers and news in supaul
                                         </p>

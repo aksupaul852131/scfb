@@ -201,25 +201,27 @@ const Hero = () => {
                 <div className="mx-auto max-w-7xl grid grid-cols-6 gap-4">
 
                     <div className="bg-white w-full rounded-lg col-span-3 py-4 px-2">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 content-center h-full">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 content-center  h-full">
                             <div className="grid justify-items-center">
                                 <img src='/customer-care-smartcare.webp' className="w-48" />
                             </div>
-                            <Link href='/page/customer-support'>
-                                <div className="md:mr-6 sm:mt-3 grid content-center pl-2">
+
+                            <div className="md:mr-6 sm:mt-3 grid content-center pl-2">
+                                <Link href='/page/customer-support'>
                                     <h3 className="text-xs mb-2 md:text-lg font-semibold ">Customer Support </h3>
-                                    <div className="flex items-center hover:text-blue-700 mb-5">
-                                        <p className="text-xs text-gray-700 mr-2 hover:text-blue-700 select-none">Inquary Now</p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                                        </svg>
-                                    </div>
+                                </Link>
+                                <div className="flex items-center hover:text-blue-700 mb-5">
+                                    <p className="text-xs text-gray-700 mr-2 hover:text-blue-700 select-none">Inquary Now</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
                                 </div>
-                            </Link>
+                            </div>
+
                         </div>
 
                     </div>
-                    <div className="bg-white w-full h-full rounded-lg col-span-3 row-span-1 md:row-span-2 py-4 px-2">
+                    <div className="bg-white w-full h-full rounded-lg col-span-3 row-span-1 md:row-span-2 py-4 px-2 md:px-4">
                         <div className="grid grid-cols-1 gap-2 content-center h-full">
                             <div className="grid justify-items-center">
                                 <img src='/electrician-supaul.webp' className="w-48" />
@@ -265,7 +267,7 @@ const Hero = () => {
                 <div className="">
 
                     <div className="relative rounded-xl mt-4 overflow-auto p-4 lg:mx-auto lg:max-w-7xl no-scrollbar">
-                        <div className="flex flex-nowrap md:justify-center gap-4 md:gap-8 lg:gap-12 pb-4">
+                        <div className="flex flex-nowrap gap-4 md:gap-8 lg:gap-12 pb-4">
                             <div className="w-24 lg:w-32 flex-none last:pr-8">
                                 <Link href='/service/ac-service-centre-in-supaul'>
                                     <img src='/opt/opt1.png' alt='AC Repair - Smart Care' />
@@ -283,10 +285,20 @@ const Hero = () => {
                                     <img src='/opt/opt4.png' alt='Washing Machine Repair - Smart Care' />
                                 </Link>
                             </div>
+                            <div className="w-24 lg:w-32 flex-none last:pr-8">
+                                <Link href='/service/microwave-repair-service-centre-supaul'>
+                                    <img src='/opt/opt7.png' alt='Microwave Repair - Smart Care' />
+                                </Link>
+                            </div>
 
                             <div className="w-24 lg:w-32 flex-none last:pr-8">
                                 <Link href='/service/led-tv-repair-in-supaul'>
                                     <img src='/opt/opt2.png' alt='TV Repair - Smart Care' />
+                                </Link>
+                            </div>
+                            <div className="w-24 lg:w-32 flex-none last:pr-8">
+                                <Link href='/service/air-purifier-repair-service-center-in-supaul'>
+                                    <img src='/opt/opt8.png' alt='Air Purifier - Smart Care' />
                                 </Link>
                             </div>
                             <div className="w-24 lg:w-32 flex-none last:pr-8">
