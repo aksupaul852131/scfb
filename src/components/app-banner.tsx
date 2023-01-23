@@ -1,6 +1,10 @@
+import Link from 'next/link';
+
 const AppBanner = () => {
     return (
-        <img className="fixed z-20 bottom-0 md:hidden" src='/app-banner.png' />
+        <Link href='' >
+            <img className="fixed z-20 bottom-0 md:hidden" src='/appbanner.png' />
+        </Link>
     );
 }
 

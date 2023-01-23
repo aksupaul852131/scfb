@@ -7,7 +7,7 @@ const Footer = () => {
         <>
 
 
-            <footer className="footer bg-[#192132] relative text-gray-200 dark:text-gray-200 font-sans">
+            <footer className="footer bg-[#192132] relative text-gray-200 dark:text-gray-200 font-sans mb-14">
                 <div className="container max-w-7xl mx-auto px-4">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
@@ -142,7 +142,7 @@ const Footer = () => {
                                             Usefull Links
                                         </h3>
                                         <ul className="list-none footer-list mt-6">
-                                            <li>
+                                            <li className="flex">
                                                 <Link
                                                     href="/blogs"
                                                     className="text-gray-300 hover:text-blue-700 duration-500 ease-in-out flex"
@@ -153,6 +153,7 @@ const Footer = () => {
 
                                                     Blogs
                                                 </Link>
+                                                <div className="bg-blue-700 px-3 py-1 ml-2 text-xs rounded-full">New</div>
                                             </li>
                                             <li className="mt-[10px]">
                                                 <Link
@@ -210,7 +211,7 @@ const Footer = () => {
                                                     type="submit"
                                                     id="submitsubscribe"
                                                     name="send"
-                                                    className="btn mt-2 bg-indigo-600 hover:bg-indigo-700 border-indigo-600 py-2 hover:border-indigo-700 text-white rounded-md"
+                                                    className="btn mt-2 bg-blue-700 hover:bg-indigo-700 border-indigo-600 py-2 hover:border-indigo-700 text-white rounded-md"
                                                 >
                                                     Subscribe
                                                 </button>

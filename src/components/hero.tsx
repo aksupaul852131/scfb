@@ -15,7 +15,7 @@ const times = [
     },
     {
         id: 3,
-        name: 'Geyser',
+        name: 'RO - Water Purifier',
 
     },
     {
@@ -33,6 +33,27 @@ const times = [
         name: 'Washing machine',
 
     },
+    {
+        id: 7,
+        name: 'Geyser',
+
+    },
+    {
+        id: 8,
+        name: 'TV',
+
+    },
+    {
+        id: 9,
+        name: 'Electrician Service',
+
+    },
+    {
+        id: 10,
+        name: 'Plumber Service',
+
+    },
+
 
 ]
 
@@ -115,7 +136,7 @@ const Hero = () => {
                                                             <Listbox.Button className="max-w-2xl relative w-full cursor-default rounded-md border border-gray-300 bg-white py-4 pl-3 pr-10 text-left shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm">
                                                                 <span className="flex items-center">
 
-                                                                    <span className="ml-3 block truncate">{selected.name}</span>
+                                                                    <span className="ml-3 block truncate text-blue-700">{selected.name}</span>
                                                                 </span>
                                                                 <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
                                                                     <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
@@ -146,7 +167,7 @@ const Hero = () => {
                                                                                     <div className="flex items-center">
 
                                                                                         <span
-                                                                                            className={classNames(selected ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
+                                                                                            className={classNames(selected ? 'font-semibold' : 'font-normal', 'ml-3 block truncate', item.name == 'Electrician Service' ? 'text-blue-700' : 'text-black')}
                                                                                         >
                                                                                             {item.name}
                                                                                         </span>
