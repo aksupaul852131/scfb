@@ -60,21 +60,28 @@ const Slug = ({ post, relatedPosts }) => {
         <div>
             <Head>
                 <title>{`${post.title} | Smart Care`}</title>
-                <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
                 <meta name="description" content={post.metadesc} />
-                <meta name='subject' content='Blog - Smart Care' />
+                <link rel="canonical" href={`http://smartcaresupaul.in/service/${post.slug.current}`} />
 
-                <link rel="canonical" href={`http://smartcaresupaul.in/blog/${post.slug.current}`} />
+
+                <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
                 <meta property="fb:app_id" content="1208723013361131" />
-                <meta name="theme-color" content="#1D4ED8" />
-
                 <meta property="og:site_name" content="Smart Care" />
-                <meta property="og:type" content="website" />
 
-                <meta property="og:url" content={`http://smartcaresupaul.in/blog/${post.slug.current}`} />
-                <meta property="og:title" content={`${post.title} | Smart Care`} key="title" />
-                <meta property="og:description" content={post.metadesc} key="description" />
+                {/* Facebook Meta Tag */}
+                <meta property="og:url" content="https://www.smartcaresupaul.in/service/jet-pump-ac-servicing-supaul" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content={`${post.title} | Smart Care`} />
+                <meta property="og:description" content={post.metadesc} />
                 <meta property="og:image" content={`${urlFor(post.mainImage).width(800).fit('max').auto('format')}`} />
+
+                {/* Twitter Meta Tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter:domain" content="smartcaresupaul.in" />
+                <meta property="twitter:url" content={`http://smartcaresupaul.in/service/${post.slug.current}`} />
+                <meta name="twitter:title" content={`${post.title} | Smart Care`} />
+                <meta name="twitter:description" content={post.metadesc} key="description" />
+                <meta name="twitter:image" content={`${urlFor(post.mainImage).width(800).fit('max').auto('format')}`} />
 
                 {/* schema */}
                 <script

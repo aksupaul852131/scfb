@@ -114,19 +114,28 @@ const Service = ({ service }) => {
             <Head>
                 <title>{`${service.title} | Smart Care`}</title>
                 <meta name="description" content={service.metadesc} />
-
                 <link rel="canonical" href={`http://smartcaresupaul.in/service/${service.slug.current}`} />
-                <meta property="og:url" content={`http://smartcaresupaul.in/service/${service.slug.current}`} />
-                <meta property="fb:app_id" content="1208723013361131" />
-                <meta name="theme-color" content="#1D4ED8" />
 
-                <meta property="og:site_name" content="Smart Care" />
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content={`${service.title} | Smart Care`} key="title" />
-                <meta property="og:description" content={service.metadesc} key="description" />
-                <meta property="og:image" content={`${urlFor(service.mainImage).width(800).fit('max').auto('format')}`} />
+
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
-                <meta name='subject' content='Home Appliances Repair In Supaul' />
+                <meta property="fb:app_id" content="1208723013361131" />
+                <meta property="og:site_name" content="Smart Care" />
+
+                {/* Facebook Meta Tag */}
+
+                <meta property="og:url" content="https://www.smartcaresupaul.in/service/jet-pump-ac-servicing-supaul" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content={`${service.title} | Smart Care`} />
+                <meta property="og:description" content={service.metadesc} />
+                <meta property="og:image" content={`${urlFor(service.mainImage).width(800).fit('max').auto('format')}`} />
+
+                {/* Twitter Meta Tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter:domain" content="smartcaresupaul.in" />
+                <meta property="twitter:url" content={`http://smartcaresupaul.in/service/${service.slug.current}`} />
+                <meta name="twitter:title" content={`${service.title} | Smart Care`} />
+                <meta name="twitter:description" content={service.metadesc} key="description" />
+                <meta name="twitter:image" content={`${urlFor(service.mainImage).width(800).fit('max').auto('format')}`} />
 
 
                 {/* schema */}
