@@ -17,12 +17,16 @@ export default async (req, res) => {
             from: 'customer@gmail.com',
             to: "smartcare852131@gmail.com",
             subject: `New Job ${servicename}`,
-            html: `<h3>New Leads From Web SmartCare</h3><br>
+            html: `
+                
+            <h3>New Leads From Web SmartCare</h3><br>
         <p><strong>Name: </strong> ${name}</p>
         <p><strong>Mobile: </strong> ${mobile}</p>
          <p><strong>date: </strong> ${date} - ${time}</p>
          <p><strong>unit: </strong> ${unit}</p>
         <p><strong>service: </strong> ${servicename}</p>
+
+
       `
         });
     } catch (error) {

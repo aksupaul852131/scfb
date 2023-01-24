@@ -7,7 +7,7 @@ const Footer = () => {
         <>
 
 
-            <footer className="footer bg-[#192132] relative text-gray-200 dark:text-gray-200 font-sans mb-14">
+            <footer className="footer bg-[#192132] relative text-gray-200 dark:text-gray-200 font-sans mb-14 md:mb-0">
                 <div className="container max-w-7xl mx-auto px-4">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
