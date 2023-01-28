@@ -28,7 +28,7 @@ export default function Home({ blogs }) {
         <title>Smart Care | Home Appliance Repair Services in Supaul - Expert Technicians Available Now</title>
         <meta name="description" content='Get expert repair and maintenance services for all types of home appliances in Supaul, Bihar. Smart Care technicians are trained to fix any issue quickly and efficiently.' />
 
-        <link rel="canonical" href='http://smartcaresupaul.in' />
+      
         <meta name="google-site-verification" content="ZInZzH3oqHUCrkz_tEbsHH1zGv1G4DtrTpJp_YseZ0Y" />
         <meta name="facebook-domain-verification" content="5t3djr0q97d10k26uabhh7jdifzi95" />
 

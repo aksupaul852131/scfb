@@ -61,8 +61,6 @@ const Slug = ({ post, relatedPosts }) => {
             <Head>
                 <title>{`${post.title} | Smart Care`}</title>
                 <meta name="description" content={post.metadesc} />
-                <link rel="canonical" href={`http://smartcaresupaul.in/service/${post.slug.current}`} />
-
 
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
                 <meta property="fb:app_id" content="1208723013361131" />

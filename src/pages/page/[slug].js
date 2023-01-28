@@ -35,7 +35,6 @@ const Page = ({ page }) => {
                 <meta name="description" content={page.metadesc} />
                 <meta name='subject' content='Page | Smart Care' />
 
-                <link rel="canonical" href={`http://smartcaresupaul.in/page/${page.slug.current}`} />
                 <meta property="og:url" content={`http://smartcaresupaul.in/page/${page.slug.current}`} />
 
 
