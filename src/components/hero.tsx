@@ -167,7 +167,7 @@ const Hero = () => {
                                                                                     <div className="flex items-center">
 
                                                                                         <span
-                                                                                            className={classNames(selected ? 'font-semibold' : 'font-normal', 'ml-3 block truncate', item.name == 'Electrician Service' ? 'text-blue-700' : 'text-black')}
+                                                                                            className={classNames(selected ? 'font-semibold' : 'font-normal', 'ml-3 block truncate', item.name == 'Electrician Service' ? 'text-blue-700' : 'text-white')}
                                                                                         >
                                                                                             {item.name}
                                                                                         </span>
@@ -284,7 +284,7 @@ const Hero = () => {
 
 
             <div className="font-[Poppins] select-none">
-                <h2 className="text-center text-2xl font-semibold mt-10">What We Can Fix For You</h2>
+                <h2 className="text-center text-2xl font-semibold mt-10">Select Your Service</h2>
                 <div className="">
 
                     <div className="relative rounded-xl mt-4 overflow-auto p-4 lg:mx-auto lg:max-w-7xl no-scrollbar">
