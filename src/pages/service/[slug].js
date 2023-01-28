@@ -114,8 +114,6 @@ const Service = ({ service }) => {
             <Head>
                 <title>{`${service.title} | Smart Care`}</title>
                 <meta name="description" content={service.metadesc} />
-                <link rel="canonical" href={`http://smartcaresupaul.in/service/${service.slug.current}`} />
-
 
                 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
                 <meta property="fb:app_id" content="1208723013361131" />
@@ -601,7 +599,7 @@ const Service = ({ service }) => {
                                                     <div className="flex items-center justify-items-start">
                                                         <img
                                                             alt="Smart Care Users"
-                                                            src="https://scontent.fpat1-2.fna.fbcdn.net/v/t39.30808-6/316798657_462576739316953_2477513583375707439_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_ohc=HqWjyVFCgfkAX-8M5Pk&_nc_ht=scontent.fpat1-2.fna&oh=00_AfB73gfsb-B3JmEtzndWGJ9SGlqtxlLuDcLLw5I0GJozug&oe=63D2077F"
+                                                            src="/user.png"
                                                             className="h-12 w-12 rounded-full object-cover"
                                                         />
                                                         <div className="ml-4">
