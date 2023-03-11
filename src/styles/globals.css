@@ -36,7 +36,7 @@
     }
 
     .single-article h3 {
-        @apply text-2xl text-black dark: text-white font-bold py-2 font-['Poppins'] mt-8;
+        @apply text-2xl text-black dark:text-white font-bold py-2 font-['Poppins'] mt-8;
     }
 
     .single-article pre {
@@ -44,7 +44,7 @@
     }
 
     .single-article p {
-        @apply font-['Poppins'] text-black dark: text-white leading-loose tracking-wide mt-1 mb-4;
+        @apply font-['Poppins'] text-black dark:text-white leading-loose tracking-wide mt-1 mb-4;
     }
 
     .single-article blockquote {
