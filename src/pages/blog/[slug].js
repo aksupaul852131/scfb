@@ -12,7 +12,7 @@ function urlFor(source) {
 const ptComponents = {
     types: {
         image: ({ value }) => {
-            if (!value?.asset?._ref) {
+            if(!value?.asset?._ref) {
                 return null
             }
             return (

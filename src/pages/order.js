@@ -30,7 +30,7 @@ export default function Order() {
     const onSubmitForm = async (e) => {
         e.preventDefault()
 
-        if (inputs.mobile.length == 10) {
+        if(inputs.mobile.length == 10) {
             setForm({ state: 'loading' })
             try {
                 const res = await fetch(`api/contact`, {
@@ -43,7 +43,7 @@ export default function Order() {
 
                 const { error } = await res.json()
 
-                if (error) {
+                if(error) {
                     setForm({
                         state: 'error',
                         message: error,
@@ -63,7 +63,7 @@ export default function Order() {
                     unit: 0,
                     servicename: '',
                 })
-            } catch (error) {
+            } catch(error) {
                 setForm({
                     state: 'error',
                     message: 'Something went wrong',
@@ -144,62 +144,7 @@ export default function Order() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="mb-5">
-                                <label
-                                    htmlFor="guest"
-                                    className="mb-3 block text-base font-medium text-[#07074D]"
-                                >
-                                    How many product for repair ?
-                                </label>
-                                <input
-                                    type="number"
-                                    name="unit"
-                                    id="unit"
-                                    value={inputs.unit}
-                                    onChange={handleChange}
-                                    placeholder={1}
-                                    min={1}
-                                    className="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                                />
-                            </div>
-                            <div className="-mx-3 flex flex-wrap">
-                                <div className="w-full px-3 sm:w-1/2">
-                                    <div className="mb-5">
-                                        <label
-                                            htmlFor="date"
-                                            className="mb-3 block text-base font-medium text-[#07074D]"
-                                        >
-                                            Date
-                                        </label>
-                                        <input
-                                            value={inputs.date}
-                                            onChange={handleChange}
-                                            type="date"
-                                            name="date"
-                                            id="date"
-                                            className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                                        />
-                                    </div>
-                                </div>
-                                <div className="w-full px-3 sm:w-1/2">
-                                    <div className="mb-5">
-                                        <label
-                                            htmlFor="time"
-                                            className="mb-3 block text-base font-medium text-[#07074D]"
-                                        >
-                                            Time
-                                        </label>
-                                        <input
-                                            value={inputs.time}
-                                            onChange={handleChange}
-                                            type="time"
-                                            name="time"
-                                            id="time"
-                                            className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
+
 
 
 
